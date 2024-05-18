@@ -1,0 +1,128 @@
+
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+  }
+  /* .navbar { 
+    background-color: #eee;
+    color: #000c66;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  .container {
+    display: flex; 
+    height: 100%;
+  }
+  
+  .left-menu{
+    width: 250px;
+    background-color:  #050a30;
+    padding: 20px;
+    
+  }
+  .left-menu h2{
+    margin-bottom: 15px;
+    color: #fff;
+    
+  }
+  .left-menu ul li{
+    list-style-type: none;
+    height: 50px;
+    color: white;
+    /* font-family: var(--font1); */
+    
+    
+/*     
+  } */
+  
+  /* .nav-list-item{
+    display: flex;
+  
+  }
+  .left-menu ul li a {
+    padding: 10px 15px;
+     text-decoration: none;
+     color:#eee;
+     font-family: var(--font1);
+   
+  }  */
+  
+  /* .left-menu  img {
+    width: 40px;  */
+    /* position:relative; */
+    
+    
+  /* } */ */
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+ }
+
+.h2{
+    align-items: center;
+    color: #b9d8fa;
+}
+
+.form {
+    flex: 1;
+    display: block;
+    margin: 20px;
+   
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"] {
+  
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; 
+ }
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    background-color:  #86b2c6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  .button[type="submit"]:hover {
+    background-color:   #1863d6;
+    cursor: pointer;    
+} 
+#expenseType {
+  width: 100%; /* Set the width to 100% of its container */
+  padding: 8px; /* Add padding for visual spacing */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Add border for styling */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}

@@ -1,0 +1,83 @@
+2024-05-17 11:06:07,651 - ERROR - User 'emily' not found.
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_begin with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[42:61]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[63:85]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_headers_finished with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[89:95]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_begin with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[139:158]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[160:190]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_headers_finished with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[194:204]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_begin with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[248:267]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[269:293]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_headers_finished with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[297:302]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_begin with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[346:365]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[367:389]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_headers_finished with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[393:403]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_begin with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[447:466]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[468:514]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_field with data[516:528]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_value with data[530:540]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_header_end with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_headers_finished with no data
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[544:16384]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[0:27037]
+2024-05-17 13:00:37,265 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[27038:77703]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[77704:84998]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[84999:145346]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[145347:145939]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[145940:160263]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[160264:212992]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:4132]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[0:1]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_data with data[4133:6582]
+2024-05-17 13:00:37,272 - DEBUG - Calling on_part_end with no data
+2024-05-17 13:00:37,272 - DEBUG - Calling on_end with no data
+2024-05-17 17:48:14,778 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-05-17 17:48:31,483 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-05-17 18:53:18,174 - ERROR - User '1' not found.
+2024-05-17 19:04:52,643 - ERROR - User '1' not found.
+2024-05-17 23:53:47,886 - ERROR - Failed to create department: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-17 23:56:55,505 - INFO - Department created: <models.Department object at 0x0000023FD345A510>
+2024-05-17 23:58:05,239 - INFO - Department retrieved: <models.Department object at 0x00000249FD486810>
+2024-05-17 23:59:31,255 - ERROR - Failed to assign manager to employee: 404: Employee or manager not found
+2024-05-18 00:00:31,524 - ERROR - Failed to assign manager to employee: 404: Employee or manager not found
+2024-05-18 00:01:25,174 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:01:52,863 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:02:18,836 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:03:18,826 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:05:41,244 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:06:24,511 - ERROR - Failed to assign manager to employee: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:08:03,609 - ERROR - Failed to assign manager to employee: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 00:09:57,635 - ERROR - Failed to assign manager to employee: 404: Employee or manager not found
+2024-05-18 00:11:47,975 - ERROR - Failed to assign manager to employee: 404: Employee or manager not found
+2024-05-18 00:12:08,680 - ERROR - Failed to assign manager to employee: 404: Employee or manager not found
+2024-05-18 09:13:21,015 - ERROR - Failed to create department: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:38:49,129 - ERROR - Failed to authenticate user: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:38:58,097 - ERROR - Failed to authenticate user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:42:20,121 - ERROR - Failed to create user: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:43:19,465 - ERROR - Failed to create user: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:48:36,904 - ERROR - Failed to create user: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:49:50,925 - ERROR - Failed to designate user as admin: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: User.employees and back-reference User.manager are both of the same direction <RelationshipDirection.MANYTOONE: 2>.  Did you mean to set remote_side on the many-to-one side ?
+2024-05-18 09:50:52,492 - 

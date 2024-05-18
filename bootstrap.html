@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    .card-header {
+  background-color: #f8f9fa;
+}
+
+.card-title i {
+  margin-right: 10px;
+}
+
+.card-body .btn {
+  margin: 5px;
+}
+
+    /* Custom CSS here */
+  </style>
+</head>
+<body>
+  <!-- Cards go here -->
+  <div class="card text-center mb-4">
+    <div class="card-header">
+      <h5 class="card-title"><i class="bi bi-people"></i> Manage Employees</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Efficiently oversee and update employee information. Add new employees, edit existing profiles, or remove employees from the system.</p>
+      <a href="#" class="btn btn-primary">Add Employee</a>
+      <a href="#" class="btn btn-secondary">Edit Employee</a>
+      <a href="#" class="btn btn-danger">Remove Employee</a>
+      <a href="#" class="btn btn-info">View Employee List</a>
+    </div>
+    <div class="card-footer text-muted">
+      Last Updated: <span id="last-updated-employee">[Timestamp]</span>
+    </div>
+    <div class="card text-center mb-4">
+        <div class="card-header">
+          <h5 class="card-title"><i class="bi bi-person-badge"></i> Assign Managers</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Designate managers to oversee various teams and departments. Ensure each team has the right leadership to guide them.</p>
+          <a href="#" class="btn btn-primary">Assign Manager to Team</a>
+          <a href="#" class="btn btn-secondary">Update Manager Information</a>
+          <a href="#" class="btn btn-danger">Remove Manager</a>
+          <a href="#" class="btn btn-info">View Assigned Managers</a>
+        </div>
+        <div class="card-footer text-muted">
+          Last Updated: <span id="last-updated-manager">[Timestamp]</span>
+        </div>
+      </div>
+      <div class="card text-center mb-4">
+        <div class="card-header">
+          <h5 class="card-title"><i class="bi bi-building"></i> Manage Departments</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Organize and maintain the company’s department structure. Create new departments, merge existing ones, or modify departmental details.</p>
+          <a href="#" class="btn btn-primary">Add Department</a>
+          <a href="#" class="btn btn-secondary">Edit Department</a>
+          <a href="#" class="btn btn-danger">Delete Department</a>
+          <a href="#" class="btn btn-info">View Department List</a>
+        </div>
+        <div class="card-footer text-muted">
+          Last Updated: <span id="last-updated-department">[Timestamp]</span>
+        </div>
+      </div>
+      
+      
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

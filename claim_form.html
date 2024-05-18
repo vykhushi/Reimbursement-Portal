@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/claim_form.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/left_menu.css">
+   
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="left-menu-container">
+            <div id="leftMenuContainer"> </div>
+        </div>
+ 
+        <div class="flex: 1;">
+            <h2 style="align-items: center; margin: 20px;"> Expense Claim Form</h2>
+            <form id="expenseForm" action="http://localhost:8000/forms/" method="post" enctype="multipart/form-data" 
+            style="flex: 1; margin: 20px; height: 100vh;">
+
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="Name" required><br><br>
+
+                <label for="expenseType">Expense Type:</label>
+                <br>
+               
+                <!-- <input type="text" id="expenseType" name="Expense_Type" required><br><br> -->
+                <select id="expenseType" name="Expense_Type" required>
+                    
+                    <option value="Travelling">Travelling</option>
+                    <option value="Tech-Asset">Tech-Asset</option>
+                    <option value="Re-location">Re-location</option>
+                   
+                </select>
+                <br><br>
+                
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="Amount" required><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="Date" required><br><br>
+
+                <label for="receipt">Upload Receipt (Image):</label>
+                <input type="file" id="receipt" name="file" accept="image/*" required><br><br>
+
+                <!-- <button type="submit"  onclick="submitExpenseForm()" style="background-color:#1863d6 ;">Submit</button> -->
+                <button type="submit" onclick="validateAndSubmit()" style="background-color:#1863d6 ;">Submit</button>
+
+                
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            //Fetch the left menu HTML
+            const response = await fetch('left_menu.html');
+            const leftMenuHTML = await response.text();
+
+            // Inject the left menu into the container
+            const leftMenuContainer = document.getElementById('leftMenuContainer');
+            leftMenuContainer.innerHTML = leftMenuHTML;
+        });
+        
+
+
+
+    //     function validateAndSubmit() {
+    // const expenseType = document.getElementById('expenseType').value;
+    // const amount = parseFloat(document.getElementById('amount').value);
+
+    // // Define maximum claim amounts based on expense types
+    // const maxAmounts = {
+    //     'Travelling': 15000,   // Max 15,000 for Traveling
+    //     'Re-location': 20000,  // Max 20,000 for Relocation
+    //     'Tech-Asset': 5000     // Max 5,000 for Tech Asset
+    // };
+
+    // // Validate amount based on selected expense type
+    // if (expenseType in maxAmounts) {
+    //     const maxAmount = maxAmounts[expenseType];
+    //     if (amount > maxAmount) {
+    //         alert(`Maximum claim amount for ${expenseType} is ${maxAmount}. Please enter a valid amount.`);
+    //         return ; // Prevent form submission
+    //     }
+    // }
+    
+    
+
+ 
+    //     }
+        
+    //     async function submitExpenseForm() {
+    //         const formElement = document.getElementById('expenseForm');
+    //         const formData = new FormData(formElement);
+
+    //         try {
+    //             const response = await fetch('http://localhost:8000/forms/', {
+    //                 method: 'POST',
+    //                 body: formData
+    //             });
+
+    //             if (!response.ok) {
+    //                 throw new Error(`HTTP error! Status: ${response.status}`);
+    //             }
+
+    //             const responseData = await response.json();
+    //             console.log(responseData); // Log response data received from backend
+    //             alert('Form submitted successfully!');
+                
+                
+                
+    //             // Optionally reset the form after successful submission
+    //             formElement.reset();
+
+    //             window.location.href = 'http://127.0.0.1:5500/expense-list.html'; 
+               
+    //         } catch (error) {
+    //             console.error('Error:', error);
+    //             alert('An error occurred while submitting the form. Please try again.');
+    //         }
+
+    //     }      
+    
+    async function validateAndSubmit(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const expenseType = document.getElementById('expenseType').value;
+        const amount = parseFloat(document.getElementById('amount').value);
+
+        // Define maximum claim amounts based on expense types
+        const maxAmounts = {
+            'Travelling': 15000,   // Max 15,000 for Traveling
+            'Re-location': 20000,  // Max 20,000 for Re-location
+            'Tech-Asset': 5000     // Max 5,000 for Tech Asset
+        };
+
+        // Validate amount based on selected expense type
+        if (expenseType in maxAmounts) {
+            const maxAmount = maxAmounts[expenseType];
+            if (amount > maxAmount) {
+                alert(`Maximum claim amount for ${expenseType} is ${maxAmount}. Please enter a valid amount.`);
+                return; // Stop further execution if amount is invalid
+            }
+        }
+
+        // If validation passes, proceed with form submission
+        const formElement = document.getElementById('expenseForm');
+        const formData = new FormData(formElement);
+
+        try {
+            const response = await fetch('http://localhost:8000/forms/', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const responseData = await response.json();
+            console.log(responseData); // Log response data received from backend
+            alert('Form submitted successfully!');
+
+            // Optionally reset the form after successful submission
+            formElement.reset();
+            console.log('Redirecting to expense-list.html...');
+            window.location.href = 'http://127.0.0.1:5500/expense-list.html';
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while submitting the form. Please try again.');
+        }
+    }
+
+    // Add event listener to the form submit event
+    document.getElementById('expenseForm').addEventListener('submit', validateAndSubmit);
+
+
+        
+    </script>
+</body>
+
+</html>
