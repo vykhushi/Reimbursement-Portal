@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="css/manage_dept.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="dashboard.css">
-    
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+   
 </head>
 <body>
-
+    <nav class="navbar">
+        <div class="navbar-title">
+            EasyReimburse
+        </div><div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
+       
+    </nav>
     <div class="container">
-        <div class="left-menu-container">
-        <div id="leftMenuContainer"> </div>
-        <div class="department">
-            <h3>Add Department</a> </h3>
+        <div class="left-menu-container" id="leftMenuContainer">
+            <!-- <div id="leftMenuContainer"> </div> -->
         </div>
-        </div> 
+ 
+        <div class="main-content-container;" style="flex: 1;">
+            <h2>Add Department</h2>
+            <form id="deptForm">
+                <div class="form-group">
+                    <label for="deptName">Department Name</label>
+                    <input type="text" id="deptName" name="deptName" required>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        
+        </div>
+        
 
-        
-        
-   
+      </div>
+      <footer class="footer">
+        <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
+    </footer>
+          
         
 
            
-        </div>
-    </div>
+       
     <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async function () {
@@ -38,7 +57,46 @@
             const leftMenuContainer = document.getElementById('leftMenuContainer');
             leftMenuContainer.innerHTML = leftMenuHTML;
         });
+
+
+        document.addEventListener('DOMContentLoaded', async function () {
+    // Load left menu
+    const response = await fetch('left_menu.html');
+    const leftMenuHTML = await response.text();
+    document.getElementById('leftMenuContainer').innerHTML = leftMenuHTML;
+
+    // Handle form submission
+    const form = document.getElementById('deptForm');
+    form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const deptName = document.getElementById('deptName').value;
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/departments/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ dept_name: deptName }),
+            });
+
+            if (response.ok) {
+                alert('Department added successfully!');
+                form.reset();
+            } else {
+                const errorData = await response.json();
+                alert('Error adding department: ' + (errorData.detail || 'Unknown error'));
+            }
+        } catch (error) {
+            console.error('Error adding department:', error);
+            alert('Error adding department: ' + error.message);
+        }
+    });
+});
+
+
        </script>
+
     
 </body>
 </html>

@@ -5,6 +5,7 @@ from datetime import date
 from fastapi import UploadFile
 
 class CreateUser(BaseModel):
+    id:int
     username: str
     email: str
     password: str
@@ -24,9 +25,16 @@ class GetFormData(BaseModel):
     Amount: int
     Date:date
     Image_Url:str
+    Comment:str
+    Status:str
     
     class Config:
         orm_mode = True 
+
+
+
+class AddDepartment(BaseModel):
+    dept_name:str
 
 
 

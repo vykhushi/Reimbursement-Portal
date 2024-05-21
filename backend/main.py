@@ -1,16 +1,16 @@
 from ast import Name
-from fastapi import FastAPI, HTTPException, status, Depends,UploadFile,File,Form,APIRouter
+from fastapi import FastAPI, HTTPException, status, Depends,UploadFile,File,Form,APIRouter,Request
 from pathlib import Path
 from typing import List
 from datetime import date
 from fastapi.middleware.cors import CORSMiddleware
-from schemas import CreateUser,UserAuthenticate,GetFormData
+from schemas import CreateUser,UserAuthenticate,GetFormData,AddDepartment
 import models 
 import schemas
 from models import  User as DBUser
-
+from models import Dept
 from models import FormData
-
+from typing import Optional
 from database import SessionLocal,engine
 from sqlalchemy.orm import Session
 import os
@@ -60,6 +60,7 @@ logging.basicConfig(
 def create_user(user: CreateUser, db: Session = Depends(get_db)):
     try:
           db_user = DBUser(
+              id=user.id,
               username=user.username,
               email=user.email,
               password=user.password,
@@ -71,15 +72,14 @@ def create_user(user: CreateUser, db: Session = Depends(get_db)):
           db.refresh(db_user)
           return db_user
     
+     # Set redirection based on the user's role
+       
+    
     except Exception as e:
       logging.error(f"Failed to create user: {e}")
       raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to create user")
 
 
-
-
-
-    
 # API endpoint to authenticate a user
 @app.post("/login/")
 def authenticate_user(user_data:UserAuthenticate, db: Session = Depends(get_db)):
@@ -126,13 +126,22 @@ def make_user_admin(email: str, db: Session = Depends(get_db)):
 
 
 
-@app.put("/employees/{employee_email}/assign_manager/{manager_email}", response_model=CreateUser)
-def assign_manager_to_employee(employee_email: str, manager_email: str, db: Session = Depends(get_db)):
+
+@app.put("/assign_manager/{manager_email}/employees/{employee_email}", response_model=CreateUser)
+def assign_manager_to_employee(manager_email: str, employee_email: str, db: Session = Depends(get_db)):
     try:
-        employee = db.query(DBUser).filter(DBUser.email == employee_email).first()
+      
+        logging.info(f"Looking for manager with email: {manager_email}")
+        logging.info(f"Looking for employee with email: {employee_email}")
+
+     
         manager = db.query(DBUser).filter(DBUser.email == manager_email).first()
+        employee = db.query(DBUser).filter(DBUser.email == employee_email).first()
+        
 
         if not employee or not manager:
+            
+            logging.error(f"Employee or manager not found: employee={employee}, manager={manager}")
             raise HTTPException(status_code=404, detail="Employee or manager not found")
 
         employee.manager_id = manager.id  # Assuming manager_id is stored in the manager's User object
@@ -169,12 +178,14 @@ async def submit_form(
     Expense_Type: str = Form(...),
     Amount: int = Form(...),
     Date: date = Form(...),
-    file: UploadFile = File(...)
+    file: UploadFile = File(...),
+    Comment:str=Form(...),
+    Status:str=Form(...)
 ):
  
    try:
         # Validate and parse form data using Pydantic schema
-        form_data = GetFormData(Name=Name ,Expense_Type=Expense_Type, Amount=Amount, Date=Date, Image_Url="")
+        form_data = GetFormData(Name=Name ,Expense_Type=Expense_Type, Amount=Amount, Date=Date, Image_Url="",Comment=Comment,Status=Status)
 
         
          # Save the uploaded image file to the "receipt_images" folder
@@ -194,7 +205,9 @@ async def submit_form(
             Expense_Type=form_data.Expense_Type,
             Amount=form_data.Amount,
             Date=form_data.Date,
-            Image_Url= image_url
+            Image_Url= image_url,
+            Comment=Comment,
+            Status=Status
         )
 
         # Save FormData object to the database using SQLAlchemy
@@ -221,7 +234,19 @@ def read_users(db: Session = Depends(get_db)):
     return users
 
 
+@app.post("/departments/", response_model=AddDepartment)
+def create_department(dept: AddDepartment, db: Session = Depends(get_db)):
+    db_dept = Dept(dept_name=dept.dept_name)
+    db.add(db_dept)
+    db.commit()
+    db.refresh(db_dept)
+    return dept
 
+
+@app.get("/departments/", response_model=list[AddDepartment])
+def read_departments(db: Session = Depends(get_db)):
+    departments = db.query(Dept).all()
+    return [AddDepartment(dept_name=dept.dept_name) for dept in departments]
 
 
 

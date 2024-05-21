@@ -1,0 +1,32 @@
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .navbar { 
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    color: #000c66;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  .navbar-logout button {
+    /* Style the button */
+    padding: 8px 12px;
+    background-color: #000c66;
+    border: none;
+    border-radius: 4px;
+    
+  
+  }
+  .navbar-logout button a {
+    /* Style the link inside the button */
+    color: white;
+    text-decoration: none;
+  }

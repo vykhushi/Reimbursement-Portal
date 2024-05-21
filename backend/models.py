@@ -15,21 +15,13 @@ class User(Base):
     role = Column(String(50), nullable=False)
     department = Column(String(50), nullable=False)
     is_admin = Column(Boolean, default=False)
-    manager_id = Column(Integer, ForeignKey('users.id'))
-
-
-    
+    manager_id = Column(Integer, ForeignKey('users.id'))    
 
     #Relationship to access employees managed by the user
     employees = relationship("User", back_populates="manager")
 
     #  # Relationship to access the manager of the user
-    manager = relationship("User", back_populates="employees", remote_side=[id])#(m-1)
-
-   
-
-
-   
+    manager = relationship("User", back_populates="employees", remote_side=[id])#(m-1) 
 
 class FormData(Base):
     __tablename__='forms' 
@@ -39,10 +31,15 @@ class FormData(Base):
     Expense_Type=Column(String(50), unique=False, nullable=False)
     Amount=Column(Integer, unique=False, nullable=False)
     Date=Column(Date)
-    Image_Url =  Column(String(1000)) 
+    Image_Url =  Column(String(1000))
+    Comment = Column(String(500), default=None) 
+    Status=Column(String(100))
 
-
-
+class Dept(Base):
+    __tablename__='departments'
+    id = Column(Integer, primary_key=True, index=True)
+    dept_name=Column(String(50), unique=True, nullable=False)
+    
 
 
 

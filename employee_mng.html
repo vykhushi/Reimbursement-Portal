@@ -7,77 +7,61 @@
     <title>Employee Management</title>
     <link rel="stylesheet" href="css/employee_mng.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <div class="left-menu-container">
+
+    <nav class="navbar">
+        <div class="navbar-title">
+            EasyReimburse
+        </div><div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
+       
+    </nav>
+
+    <div class="container">
   
-    <div id="leftMenuContainer"> </div>
-    </div>
-   <div class="main-content-container">
-    <div class="container" >
+        <div class="left-menu-container" id="leftMenuContainer"></div>
+   
+      <div class="main-content-container"  style="flex: 1;overflow-y: scroll;height: 48rem;">
+    
         <h2>Employee Management</h2>
         <table class="employee-table">
             <thead>
                 <tr>
-                    <th>Employee ID</th>
+                    <!-- <th>Employee ID</th> -->
+                    <th>Employee Id</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Department</th>
+                    <th>Manager</th>
                     
                 </tr>
             </thead>
             <tbody id="employeeTableBody"></tbody> <!-- Placeholder for table body -->
         </table>
-
-     
+   
         
     </div>
     </div>
 
 
-    <script src="javascript/data.js"></script> <!-- Include the JavaScript file once here -->
+    <!-- <script src="javascript/data.js"></script> Include the JavaScript file once here -->
     
 
     <script>
+
         document.addEventListener('DOMContentLoaded', async function () {
-            // // Fetch the left menu HTML
+            //Fetch the left menu HTML
             const response = await fetch('left_menu.html');
             const leftMenuHTML = await response.text();
-    
-            // // Inject the left menu into the container
+
+            // Inject the left menu into the container
             const leftMenuContainer = document.getElementById('leftMenuContainer');
             leftMenuContainer.innerHTML = leftMenuHTML;
-    
-            // Populate employee table
-            const employeeTableBody = document.getElementById('employeeTableBody');
-            let tableHTML = '';
-    
-            // Check if employees array is defined and not empty
-        //     if (Array.isArray(employees) && employees.length > 0) {
-        //         employees.forEach(employee => {
-        //             tableHTML += `
-        //                 <tr>
-        //                     <td>${employee.employeeId}</td>
-        //                     <td>${employee.name}</td>
-        //                     <td>${employee.department}</td>
-        //                     <td>${employee.manager}</td>
-        //                     <td>
-        //                         <button class="action-button edit-button" onclick="editEmployee(${employee.employeeId})">
-        //                             <i class="fas fa-edit"></i>
-        //                         </button>
-        //                         <button class="action-button delete-button" onclick="deleteEmployee(${employee.employeeId})">
-        //                             <i class="fas fa-trash-alt"></i>
-        //                         </button>
-        //                     </td>
-        //                 </tr>
-        //             `;
-        //         });
-        //     } else {
-        //         tableHTML = '<tr><td colspan="5">No employees found.</td></tr>';
-        //     }
-    
-        //     employeeTableBody.innerHTML = tableHTML;
         });
+        
+        
         async function fetchUserData() {
         try {
             const response = await fetch('http://localhost:8000/users');
@@ -96,6 +80,7 @@
                     <td>${user.username}</td>
                     <td>${user.email}</td>
                     <td>${user.department}</td>
+                    <td>${user.manager_id}</td>
                 `;
                 tableBody.appendChild(row);
             });
@@ -107,6 +92,9 @@
     // Call fetchUserData function when the page loads
     window.onload = fetchUserData;
     </script>
+    <footer class="footer">
+        <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>

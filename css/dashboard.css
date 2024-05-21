@@ -5,9 +5,14 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-
 }
-.navbar { 
+
+body .container {
+  /* margin: 0;
+  padding: 0; */
+}
+
+.navbar {   
   display: flex;
   justify-content: space-between;
   background-color: #eee;
@@ -79,8 +84,8 @@ html, body {
 }
 
 .UserDashboard{
-  flex: 1; /* Occupy remaining space */
-  padding: 20px;
+   flex: 1; /*Occupy remaining space */
+   padding: 20px;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -90,18 +95,18 @@ html, body {
   margin-top: 20px;
   
 }
-.dashboard-item {
-  flex: 1;
+/* .dashboard-item {
+  flex: 1;s
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: var(--font2);
 
-}
+} */
 
-.dashboard-items-submitted-request{
+/* .dashboard-items-submitted-request{
   /* background-color:  #86b2c6; */
-  display: flex;
+  /* display: flex;
    flex-direction: column;
   justify-content: center; 
    align-items: center; 
@@ -111,13 +116,13 @@ html, body {
   margin-top: 20px; 
   width: 200px;
   padding: inherit;
-  
+   */
 
-}
+/* } */
 
-.dashboard-item-status {
+/* .dashboard-item-status {
   /* background-color:   #86b2c6; */
-  padding: inherit;
+  /* padding: inherit;
   display: flex;
    flex-direction: column;
   justify-content: center; 
@@ -128,12 +133,12 @@ html, body {
    margin-top: 20px; 
    width: 200px;
  
-}
+} */ 
 
 
-.dashboard-item-history {
+/* .dashboard-item-history {
    /* background-color: #86b2c6;  */
-   padding: inherit;
+   /* padding: inherit;
   display: flex;
   flex-direction: column; 
    justify-content: center;
@@ -142,18 +147,18 @@ html, body {
   border: 2px solid #0e0f10; 
   border-radius: 4px; 
    margin-top: 20px; 
-  width: 200px; 
-}
+  width: 200px;  */
+/* }  */
 
 
-.dashboard-items-submitted-request img,
+/* .dashboard-items-submitted-request img,
 .dashboard-item-status img,
 .dashboard-item-history img {
   max-width: 50%; 
   max-height: 50%; 
   display: block; 
   margin: auto; 
-}
+} */
 .footer {
   background-color: #eee;
   color: #000c66;
@@ -161,7 +166,7 @@ html, body {
   padding: 10px 0;
 }
 
-.card-header {
+/* .card-header {
   background-color: #f8f9fa;
 }
 
@@ -171,5 +176,5 @@ html, body {
 
 .card-body .btn {
   margin: 5px;
-}
+} */
 

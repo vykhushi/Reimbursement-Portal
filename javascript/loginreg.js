@@ -38,6 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const email = document.getElementById('loginEmail').value;
         const password = document.getElementById('loginPassword').value;
+        
+        if (!validateEmail(email)) {
+            alert('Email must end with @nucleusteq.com');
+            return;
+        }
 
         console.log(email, password);
 
@@ -74,6 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('registerPassword').value;
         const department = document.getElementById('registerDepartment').value;
         const role = document.getElementById('registerRole').value;
+        const managerId = null;
+        const is_admin = false;
+
+        if (!validateEmail(email)) {
+            alert('Email must end with @nucleusteq.com');
+            return;
+        }
 
         try {
             const response = await fetch('http://127.0.0.1:8000/users/', {
@@ -86,7 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     email: email,
                     password: password,
                     role: role,
-                    department: department
+                    department: department,
+                    is_admin: is_admin,
+                    manager_id: managerId
                 })
             });
 
@@ -101,6 +115,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // console.error('Error:', error);
         }
     });
+
+    function validateEmail(email) {
+        return email.endsWith('@nucleusteq.com');
+    }
 });
     
 

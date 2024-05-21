@@ -1,19 +1,8 @@
- 
- .navbar {
-    background-color: #eee;
-    color: #000c66;
-    padding: 20px; /* Adjust padding for spacing */
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: left; /* Center content horizontally */
-    align-items: left;/* Center content vertically */
-}
-.navbar-title {
-    margin: 0;
-}
 
-
+.container{
+  display: flex;
+  width: 100%;
+}
 
 .left-menu{
     width: 250px;
@@ -34,10 +23,6 @@
     
   }
   
-  .nav-list-item{
-    display: flex;
-  
-  }
   .left-menu ul li a {
    
     padding: 10px 15px;
@@ -49,10 +34,7 @@
   .left-menu ul li a:hover {
     /* background-color: #ddd; */
    }
-
-.footer {
-    background-color: #eee;
-    color: #000c66;
-    text-align: center;
-    padding: 10px 0;
-  }
+   
+   .main-content{
+    flex: 1;
+   }
