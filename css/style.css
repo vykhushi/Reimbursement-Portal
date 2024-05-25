@@ -67,3 +67,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.invalid {
+  border: 2px solid red;
+}
+.error-message {
+  display: none; 
+  color: red;
+  font-size: 0.8em;
+  /* margin-top: 5px; */
+  padding: 5px;
+}

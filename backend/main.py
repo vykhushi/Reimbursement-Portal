@@ -1,5 +1,5 @@
 from ast import Name
-from fastapi import FastAPI, HTTPException, status, Depends,UploadFile,File,Form,APIRouter,Request
+from fastapi import FastAPI, HTTPException, Query, status, Depends,UploadFile,File,Form,APIRouter,Request
 from pathlib import Path
 from typing import List
 from datetime import date
@@ -16,6 +16,7 @@ from sqlalchemy.orm import Session
 import os
 import uuid
 import logging
+
 
 
 app = FastAPI()
@@ -58,14 +59,15 @@ logging.basicConfig(
 
 @app.post("/users/", response_model=None, status_code=status.HTTP_201_CREATED)
 def create_user(user: CreateUser, db: Session = Depends(get_db)):
-    try:
+    try:  
           db_user = DBUser(
-              id=user.id,
+              
               username=user.username,
               email=user.email,
               password=user.password,
               role=user.role,
-              department=user.department
+              department=user.department, 
+              
             )
           db.add(db_user)
           db.commit()
@@ -77,7 +79,20 @@ def create_user(user: CreateUser, db: Session = Depends(get_db)):
     
     except Exception as e:
       logging.error(f"Failed to create user: {e}")
+      print(e)
       raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to create user")
+
+
+@app.delete("/users/{user_email}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_user(user_email: str, db: Session = Depends(get_db)):
+    user = db.query(DBUser).filter(DBUser.email== user_email).first()
+    
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+
+    db.delete(user)
+    db.commit()
+    return {"detail": "User deleted successfully"}
 
 
 # API endpoint to authenticate a user
@@ -92,6 +107,7 @@ def authenticate_user(user_data:UserAuthenticate, db: Session = Depends(get_db))
     except Exception as e:
         logging.error(f"Failed to authenticate user: {e}")
     raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to authenticate user")
+
 
 
 
@@ -153,16 +169,18 @@ def assign_manager_to_employee(manager_email: str, employee_email: str, db: Sess
         logging.error(f"Failed to assign manager to employee: {e}")
         raise
 
-@app.get("/manager/{manager_email}/employees/", response_model=List[CreateUser])
+@app.get("/manager/{manager_email}/employees/", response_model=None)
 def get_employees_managed_by_manager(manager_email: str, db: Session = Depends(get_db)):
     try:
         manager = db.query(DBUser).filter(DBUser.email == manager_email).first()
         if not manager:
             raise HTTPException(status_code=404, detail="Manager not found")
+           
 
         employees = db.query(DBUser).filter(DBUser.manager_id == manager.id).all()
         if not employees:
-            raise HTTPException(status_code=404, detail="No employees found for this manager")
+            #raise HTTPException(status_code=404, detail="No employees found for this manager")
+            return []
         
         return employees
     
@@ -174,18 +192,27 @@ def get_employees_managed_by_manager(manager_email: str, db: Session = Depends(g
 
 @app.post("/forms/", response_model=GetFormData)
 async def submit_form(
+    request:Request,
     Name:str = Form(...),
     Expense_Type: str = Form(...),
     Amount: int = Form(...),
     Date: date = Form(...),
     file: UploadFile = File(...),
     Comment:str=Form(...),
-    Status:str=Form(...)
+    Status:str=Form(...),
+    Employee_id:int=Form(...)
 ):
- 
+  
+   form_data = await request.form()
+
+    # Convert the form data to a dictionary for easy inspection
+   form_data_dict = dict(form_data)
+   print(form_data_dict)
+   
+   
    try:
         # Validate and parse form data using Pydantic schema
-        form_data = GetFormData(Name=Name ,Expense_Type=Expense_Type, Amount=Amount, Date=Date, Image_Url="",Comment=Comment,Status=Status)
+        form_data = GetFormData(Name=Name ,Expense_Type=Expense_Type, Amount=Amount, Date=Date, Image_Url="",Comment=Comment,Status=Status,Employee_id=Employee_id)
 
         
          # Save the uploaded image file to the "receipt_images" folder
@@ -207,7 +234,8 @@ async def submit_form(
             Date=form_data.Date,
             Image_Url= image_url,
             Comment=Comment,
-            Status=Status
+            Status=Status,
+            Employee_id=form_data.Employee_id,  
         )
 
         # Save FormData object to the database using SQLAlchemy
@@ -222,16 +250,64 @@ async def submit_form(
             raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(e))
    
 
-@app.get("/table/", response_model=List[GetFormData])
-async def get_data(db: Session = Depends(get_db)):
-    # Use the provided database session (`db`) to query FormData
-    form_data_list = db.query(FormData).all()
-    return form_data_list
+     
 
-@app.get("/users/", response_model=List[CreateUser])
+@app.get("/table/", response_model=None)
+def get_data(db: Session = Depends(get_db)):
+    # Use the provided database session (`db`) to query FormDat
+
+    form_data_list=db.query(FormData).all()
+    for i in range(len(form_data_list)):
+        print(form_data_list[i].id)
+    return form_data_list
+          
+   
+@app.put("/expense/{form_id}")
+async def update_form(
+    form_id: int,
+    Name: Optional[str] = Query(None),
+    Expense_Type: Optional[str] = Query(None),
+    Amount: Optional[int] = Query(None),
+    Date: Optional[date] = Query(None),
+    Image_Url: Optional[str] = Query(None),
+    Comment: Optional[str] = Query(None),
+    Status: Optional[str] = Query(None),
+    db: Session = Depends(get_db)
+):
+    form = db.query(FormData).filter(FormData.id == form_id).first()
+    if not form:
+        raise HTTPException(status_code=404, detail="Form not found")
+
+    if Name is not None:
+        form.Name = Name
+    if Expense_Type is not None:
+        form.Expense_Type = Expense_Type
+    if Amount is not None:
+        form.Amount = Amount
+    if Date is not None:
+        form.Date = Date
+    if Image_Url is not None:
+        form.Image_Url = Image_Url
+    if Comment is not None:
+        form.Comment = Comment
+    if Status is not None:
+        form.Status = Status
+
+    db.commit()
+    db.refresh(form)
+    return form
+
+
+
+
+@app.get("/users/", response_model=None)
 def read_users(db: Session = Depends(get_db)):
+    
     users = db.query(DBUser).all()
+    for i in range(len(users)):
+        print(users[i].id)
     return users
+   
 
 
 @app.post("/departments/", response_model=AddDepartment)
@@ -243,13 +319,45 @@ def create_department(dept: AddDepartment, db: Session = Depends(get_db)):
     return dept
 
 
-@app.get("/departments/", response_model=list[AddDepartment])
-def read_departments(db: Session = Depends(get_db)):
-    departments = db.query(Dept).all()
-    return [AddDepartment(dept_name=dept.dept_name) for dept in departments]
+# @app.get("/departments/", response_model=None)
+# def read_departments(db: Session = Depends(get_db)):
+#     departments = db.query(Dept).all()
+#     return [AddDepartment(id=dept.id,dept_name=dept.dept_name) for dept in departments]
+
+@app.get("/departments/", response_model=None)
+def read_dept(db: Session = Depends(get_db)):
+    departments= db.query(Dept).all()
+    return departments
+
+@app.delete("/departments/{department_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_department(department_id: int, db: Session = Depends(get_db)):
+    department = db.query(Dept).filter(Dept.id == department_id).first()
+    
+    if department is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Department not found")
+
+    db.delete(department)
+    db.commit()
+    return {"detail": "Department deleted successfully"}
+
+
+@app.get("/get_user/{email}", response_model=None)
+def read_users(email:str,db: Session = Depends(get_db)):
+    
+    user = db.query(DBUser).filter(DBUser.email==email).first()
+    return user
+
+@app.get("/get_subordinates/{id}", response_model=None)
+def read_users(id:int,db: Session = Depends(get_db)):
+    subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
+    return subordinates
 
 
 
+@app.get("/get_claim_request/{id}", response_model=None)
+def read_users(id:int,db: Session = Depends(get_db)):
+    claims = db.query(FormData).filter(FormData.Employee_id==id).all()
+    return claims
 
 
 if __name__ == "__main__":

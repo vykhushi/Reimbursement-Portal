@@ -23,20 +23,23 @@
                 <p>Don't have an account? <a href="#" id="showRegister">Register here</a>.</p>
             </div>
 
+           
+            
             <div id="registerContent" style="display: none;"> <!-- Container for registration form -->
                 <h2>Register</h2>
                 <form id="registerForm">
                     <input type="text" id="registerName" placeholder="Name" required>
                     <input type="email" id="registerEmail" placeholder="Email" required>
                     <input type="password" id="registerPassword" placeholder="Password" required>
+                    <div id="passwordErrorMessage" class="error-message"></div>-
                     <select id="registerDepartment">
-                        <option value="hr">HR</option>
+                        <!-- <option value="hr">HR</option>
                         <option value="technical">Technical</option>
                         <option value="accounts">Accounts</option>
-                        <option value="Finance">Finance</option>
+                        <option value="Finance">Finance</option> -->
                     </select>
                     <select id="registerRole">
-                        <!-- <option value="admin">Admin</option> -->
+                        
                         <option value="manager">Manager</option>
                         <option value="employee">Employee</option>
                     </select>

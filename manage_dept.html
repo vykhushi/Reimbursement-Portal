@@ -6,38 +6,88 @@
     <title>Department List</title>
     <link rel="stylesheet" href="css/manage_dept.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <!-- <link rel="stylesheet" href="dashboard.css"> -->
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
    
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar-title">
             EasyReimburse
         </div><div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
        
-    </nav>
+    </nav> -->
+    <nav class="navbar">
+        <div class="navbar-title">
+          EasyReimburse
+        </div>
+        <div class="right-navbar" style="display: flex;">
+          <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a></div>
+          <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail" style="padding: 10px;">
+              Person
+            </span>
+          </div>
+        </div>
+      </nav>
+
+    
     <div class="container">
         <div class="left-menu-container" id="leftMenuContainer">
             <!-- <div id="leftMenuContainer"> </div> -->
         </div>
  
-        <div class="main-content-container;" style="flex: 1;">
-            <h2>Add Department</h2>
+        <div class="main-content-container center-content" style="flex: 1;">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Department ID</th>
+                        <th>Department Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="department-table-body">
+                    <!-- <tr>
+                        <td id="deptId"></td>
+                        <td id="deptName"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="form-row">
+                <div class="form-container">
+            <!-- <h2>Add Department</h2> -->
             <form id="deptForm">
                 <div class="form-group">
                     <label for="deptName">Department Name</label>
                     <input type="text" id="deptName" name="deptName" required>
                 </div>
                 
-                <button type="submit">Submit</button>
+                <button type="submit">Add</button>
             </form>
+            </div>
+            <div class="form-container">
+            <!-- <h2>Delete Department</h2> -->
+            <!-- <form id="deletedeptForm">
+                <div class="form-group">
+                    <label for="deptId">Department Id</label>
+                    <input type="text" id="deptId" name="deptId" required>
+                </div>
+                
+                <button type="submit" style="background-color: red;">Delete</button>
+            </form> -->
+            </div>
+            </div>
+            
         
         </div>
         
 
       </div>
+
+
+      
+    
       <footer class="footer">
         <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
     </footer>
@@ -46,7 +96,7 @@
 
            
        
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
         document.addEventListener('DOMContentLoaded', async function () {
             // // Fetch the left menu HTML
@@ -83,6 +133,7 @@
             if (response.ok) {
                 alert('Department added successfully!');
                 form.reset();
+                location.reload(); 
             } else {
                 const errorData = await response.json();
                 alert('Error adding department: ' + (errorData.detail || 'Unknown error'));
@@ -94,6 +145,99 @@
     });
 });
 
+
+
+
+// Function to handle deletion
+async function deleteDepartmentById(departmentId) {
+    // Add your logic to handle deletion here
+    console.log('Deleting department with ID:', departmentId);
+    try {
+        const response = await fetch(`http://localhost:8000/departments/${departmentId}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            alert('Department deleted successfully!');
+            location.reload(); 
+            // deleteDeptForm.reset();
+           
+          // loadDepartmentData(); // Reload department data into the table
+        } else {
+            const errorData = await response.json();
+            alert('Error deleting department: ' + (errorData.detail || 'Unknown error'));
+        }
+    } catch (error) {
+        console.error('Error deleting department:', error);
+        // alert('Error deleting department: ' + error.message);
+    }
+}
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+        
+        fetch('http://localhost:8000/departments/')
+            .then(response => response.json())
+            .then(data => {
+
+                const tableBody = document.getElementById('department-table-body');
+                data.forEach(department => {
+                    // const deptId = document.getElementById('deptId');
+                    // const deptName = document.getElementById('deptName');
+                    // deptId.innerHTML = department.id;
+                    const row = document.createElement('tr');
+
+                    const idCell = document.createElement('td');
+                    idCell.textContent = department.id;
+
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = department.dept_name;
+
+                    const actionCell = document.createElement('td');
+                    
+                    actionCell.innerHTML = `
+        <button class="delete-department">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    `;
+
+                    // Add event listener to the button
+    const deleteButton = actionCell.querySelector('.delete-department');
+    deleteButton.addEventListener('click',function() {
+        // Get the department ID from the row and pass it to the function
+        const departmentId = row.querySelector('td').textContent;
+        console.log(departmentId, "iddd");
+        // Call a function to handle deletion passing departmentId
+        deleteDepartmentById(departmentId);
+    });
+
+    // Function to handle deletion
+// function deleteDaprtmentById(departmentId) {
+//     // Add your logic to handle deletion here
+//     console.log('Deleting department with ID:', departmentId);
+// }
+
+                    row.appendChild(idCell);
+                    row.appendChild(nameCell);
+                    row.appendChild(actionCell);
+
+                    tableBody.appendChild(row);
+
+
+                });
+            })
+               
+            .catch(error => console.error('Error fetching department data:', error));
+    });
+    
+    
 
        </script>
 

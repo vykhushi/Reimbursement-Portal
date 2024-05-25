@@ -17,12 +17,24 @@
 
 <body>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar-title">
             EasyReimburse
         </div><div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
        
-    </nav>
+    </nav> -->
+    <nav class="navbar">
+        <div class="navbar-title">
+          EasyReimburse
+        </div>
+        <div class="right-navbar" style="display: flex;">
+          <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a></div>
+          <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail" style="padding: 10px;">
+              Person
+            </span>
+          </div>
+        </div>
+      </nav>
     <div class="container">
         <!-- <div class="left-menu-container" id="leftMenuContainer">
             <div id="leftMenuContainer"> </div>
@@ -48,6 +60,10 @@
                   <label for="name">Name</label>
                   <input type="text" id="name" name="Name" required><br><br>
 
+                  <input type="number" id="employee_id" name="Employee_id" value="" hidden />
+                  <input type="number" id="Manager_id" name="Manager_id" value="" hidden />
+                  
+
                 <label for="expenseType">Expense Type:</label>
                 <br>
                
@@ -71,6 +87,10 @@
                 <input type="text" id="comment" name="Comment" value="none" hidden />
 
                 <input type="text" id="status" name="Status" value="pending" hidden />
+
+                
+
+               
 
 
                 <label for="receipt">Upload Receipt (Image):</label>
@@ -102,7 +122,13 @@
         //     const leftMenuContainer = document.getElementById('leftMenuContainer');
         //     leftMenuContainer.innerHTML = leftMenuHTML;
         // });   
-    
+
+        const expenseForm = document.getElementById('expenseForm');
+        expenseForm.addEventListener('submit', async function(event) {
+        event.preventDefault();
+        })
+
+    document.getElementById('employee_id').value=JSON.parse(sessionStorage.getItem('user')).id
     async function validateAndSubmit() {
         event.preventDefault(); // Prevent default form submission behavior
 
@@ -126,9 +152,13 @@
         }
 
         // If validation passes, proceed with form submission
+        // document.getElementById('employee_id').innerHTML=JSON.parse(sessionStorage.getItem('user')).id
         const formElement = document.getElementById('expenseForm');
+        
+        console.log(formElement)
+        
         const formData = new FormData(formElement);
-         console.log(formData)
+
         try {
             const response = await fetch('http://localhost:8000/forms/', {
                 method: 'POST',
@@ -141,12 +171,13 @@
 
             const responseData = await response.json();
             console.log(responseData); // Log response data received from backend
+            window.location.href = 'http://127.0.0.1:5500/expense-list.html';
             alert('Form submitted successfully!');
 
             // Optionally reset the form after successful submission
             formElement.reset();
             console.log('Redirecting to expense-list.html...');
-            window.location.href = 'http://127.0.0.1:5500/expense-list.html';
+            // window.location.href = 'http://127.0.0.1:5500/expense-list.html';
         } catch (error) {
             console.error('Error:', error);
             alert('An error occurred while submitting the form. Please try again.');

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/left_menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/subordinates.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">
+            EasyReimburse
+        </div>
+        <div class="right-navbar">
+            <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i
+                        class="fas fa-sign-out"></i></a></div>
+            <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail"
+                    style="padding: 10px;">
+                    Person
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-menu">
+            <ul>
+                <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
+                <!-- <li><i class="fas fa-indian-rupee-sign"><a href="claim_form.html">Reimbursement</a></i></li>
+                    <li><i class="fas fa-list"><a href="expense-list.html">Records</a></i></li> -->
+                <li><i class="fas fa-book"><a href="">Policy</a></i></li>
+            </ul>
+        </div>
+        <div class="main-content">
+
+            <table id="expenseListTable">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th> Name</th>
+                        <th>Email</th>
+                        <th hidden>Password </th>
+                        <th hidden>Role</th>
+                        <th>Department</th>
+                        <th hidden>Admin</th>
+                        <th hidden>manager</th>
+                    </tr>
+
+                </thead>
+                <tbody id="userList">
+                    <!-- User data will be populated here -->
+                </tbody>
+                <tbody id="expenseListBody">
+                    <!-- Table rows will be populated dynamically using JavaScript -->
+                </tbody>
+            </table>
+            <button onclick="fetchExpenseData()">claims</button>
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Retrieve manager's email from session storage
+                const user = JSON.parse(sessionStorage.getItem('user'));
+                const managerEmail = user.email;
+                console.log('Manager email:', managerEmail);
+
+                // Call API endpoint to fetch employees under the manager
+                const response = await fetch(`http://127.0.0.1:8000/manager/${encodeURIComponent(managerEmail)}/employees/`);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch employees');
+                }
+                const employees = await response.json();
+                console.log('Fetched employees:', employees);
+
+                // Populate the user list in the DOM
+                const userList = document.getElementById('userList');
+                employees.forEach(employee => {
+                    const row = document.createElement('tr');
+                    row.setAttribute('data-employee-id', employee.id);
+                    row.innerHTML = `
+                    <td>${employee.id}</td>
+                    <td>${employee.username}</td>
+                    <td>${employee.email}</td>
+                    <td hidden>${employee.password}</td>
+                    <td hidden>${employee.role}</td>
+                    <td>${employee.department}</td><td
+                    <td hidden>${employee.is_admin}</td>
+                    <td hidden>${employee.manager_id}</td>
+                `;
+                    userList.appendChild(row);
+                });
+                const rows = userList.querySelectorAll('tr');
+                rows.forEach(row => {
+                    console.log('Populated row:', row.outerHTML);
+                });
+            }
+            catch (error) {
+                console.error('Error:', error);
+            }
+        });
+
+
+        const claimRequests = [];
+
+
+        async function fetchExpenseData() {
+            try {
+                // Get all employee IDs from the table
+                const employeeRows = document.querySelectorAll('#userList tr');
+                const employeeIds = Array.from(employeeRows).map(row => row.getAttribute('data-employee-id'));
+
+          
+
+                // Debugging: log employee IDs
+                console.log('Employee IDs:', employeeIds);
+
+                // Check for null or undefined IDs
+                if (employeeIds.includes(null) || employeeIds.includes(undefined)) {
+                    throw new Error('One or more employee IDs are null or undefined');
+                }
+                sessionStorage.setItem('subordinatesIds', JSON.stringify(employeeIds))
+                window.location.href='expense-list.html';
+                //Fetch claim request data for each employee
+                employeeIds.forEach(async (id) => {
+                    const response = await fetch(`http://127.0.0.1:8000/get_claim_request/${id}`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to fetch claim requests for employee ID: ${id}`);
+                    }
+                    const claimsData = await response.json();
+                    await claimsData.forEach(claim => claimRequests.push(claim))
+
+                    // claimRequests.push(claimsData);
+
+                    // Display the fetched claim request da
+                    console.log('Claim requests for employee ID:', id, claimsData);
+                    
+              
+                console.log(claimRequests)
+                
+
+                // Populate the expense list table with the fetched data
+                const expenseListBody = document.getElementById('expenseListBody');
+                 claimRequests.forEach(expenseData => {
+                    const newRow = document.createElement('tr');
+                    newRow.innerHTML = `
+                    <td>${expenseData.Name}</td>
+                    <td>${expenseData.Expense_Type}</td>
+                    <td>${expenseData.Amount}</td> 
+                    <td>${expenseData.Date}</td>   
+                    <td>${expenseData.Status}</td>
+                    <td style="display:none;">${expenseData.Image_Url}</td> 
+                    <td>  
+                        <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
+                        <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
+                    </td>
+                    <td>${expenseData.Comment}</td> 
+                `;
+                    expenseListBody.appendChild(newRow);
+                });
+
+
+            });
+                console.log('All claim requests:', claimRequests);
+
+            }
+            catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

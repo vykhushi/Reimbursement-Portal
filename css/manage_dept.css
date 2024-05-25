@@ -1,10 +1,35 @@
+
 .main-content-containerh2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+}
+
 .form-group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 label {
@@ -14,7 +39,7 @@ label {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -23,9 +48,9 @@ input[type="text"] {
 
 button {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 4px;
@@ -33,8 +58,27 @@ button {
     font-size: 16px;
 }
 
+.form-row button{
+    background-color: #0056b3;
+}
+
 button:hover {
     background-color: #0056b3;
 }
     
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
     

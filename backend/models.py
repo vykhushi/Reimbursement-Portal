@@ -8,7 +8,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = 'users'
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True,autoincrement=True)
     username = Column(String(50), unique=True, nullable=False)
     email = Column(String(100), unique=True, nullable=False)
     password = Column(String(100), nullable=False)
@@ -27,6 +27,8 @@ class FormData(Base):
     __tablename__='forms' 
 
     id = Column(Integer, primary_key=True, index=True)
+    Employee_id=Column(Integer,ForeignKey('users.id'))
+  
     Name=Column(String(50), unique=False, nullable=False)
     Expense_Type=Column(String(50), unique=False, nullable=False)
     Amount=Column(Integer, unique=False, nullable=False)
@@ -35,9 +37,12 @@ class FormData(Base):
     Comment = Column(String(500), default=None) 
     Status=Column(String(100))
 
+
+  
+
 class Dept(Base):
     __tablename__='departments'
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True,autoincrement=True)
     dept_name=Column(String(50), unique=True, nullable=False)
     
 

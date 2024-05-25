@@ -14,13 +14,18 @@ body .container {
 
 .navbar {   
   display: flex;
-  justify-content: space-between;
-  background-color: #eee;
-  color: #000c66;
-  padding: 30px;
-  font-size: 24px;
-  font-weight: bold;
+    justify-content: space-between;
+    background-color: #eee;
+    color: #000c66;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
   
+}
+.right-navbar{
+  display:flex;
+  padding:30px;
+
 }
 .navbar-logout button {
   /* Style the button */
@@ -37,9 +42,11 @@ body .container {
   text-decoration: none;
 }
 
-.container {
+
+body.container {
   display: flex; /* Use flexbox for layout */
   height: 100%;
+  max-width:100%;
 }
 
 .left-menu{

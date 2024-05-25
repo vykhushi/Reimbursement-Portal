@@ -18,14 +18,6 @@
 </head>
 
 <body>
-
-    <!-- <nav class="navbar">
-        <div class="navbar-title">
-            EasyReimburse
-        </div>
-        <div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
-    </nav> -->
-
     <nav class="navbar">
         <div class="navbar-title">
           EasyReimburse
@@ -39,10 +31,6 @@
         </div>
       </nav>
     <div class="container m-0 p-0" style="display: flex;">
-        <!-- <div class="left-menu-container">
-            <div id="leftMenuContainer"> 
-            </div>
-        </div> -->
         <div class="left-menu">
             <ul>
                 <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
@@ -62,8 +50,9 @@
                         <th>Amount</th>
                         <th>Date</th>
                         <th>Status</th>
-                        <th>Action</th>
                         <th>Comment</th>
+                        <th hidden>Action</th>
+                        
                     </tr>
                 </thead>
                 <tbody id="expenseListBody">
@@ -98,9 +87,8 @@
     <footer class="footer">
         <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
     </footer>
-
-    <script>
-        let newStatus;
+ <script>
+    let newStatus;
         let expenseId;
         async function updateStatus(button, id) {
             
@@ -157,105 +145,45 @@
         }
         }
 
-
-        // document.addEventListener('DOMContentLoaded', async function () {
-        //     // // Fetch the left menu HTML
-        //     const response = await fetch('left_menu.html');
-        //     const leftMenuHTML = await response.text();
-
-        //     // Inject the left menu into the container
-        //     const leftMenuContainer = document.getElementById('leftMenuContainer');
-        //     leftMenuContainer.innerHTML = leftMenuHTML;
-        // });
-
-
         document.addEventListener('DOMContentLoaded', async function () {
             const expenseListBody = document.getElementById('expenseListBody');
 
             const employeeIds=  JSON.parse(sessionStorage.getItem('subordinatesIds'))
             console.log(employeeIds) 
             try {
-                
-                employeeIds.forEach(async (id) => {
-                    const response = await fetch(`http://127.0.0.1:8000/get_claim_request/${id}`);
-                    if (!response.ok) {
-                        throw new Error(`Failed to fetch claim requests for employee ID: ${id}`);
-                    }
-                    const claimsData = await response.json();
-                   
-
-                    // claimRequests.push(claimsData);
-
-                    // Display the fetched claim request da
-                    console.log('Claim requests for employee ID:', id, claimsData);
-                    
-              
-                
-                
-
-                // Populate the expense list table with the fetched data
-                const expenseListBody = document.getElementById('expenseListBody');
-                 claimsData.forEach(expenseData => {
-                    const newRow = document.createElement('tr');
-                    newRow.innerHTML = `
-                    <td>${expenseData.Name}</td>
-                    <td>${expenseData.Expense_Type}</td>
-                    <td>${expenseData.Amount}</td> 
-                    <td>${expenseData.Date}</td>   
-                    <td>${expenseData.Status}</td>
-                    <td style="display:none;">${expenseData.Image_Url}</td> 
-                    <td>  
-                        <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
-                        <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
-                    </td>
-                    <td>${expenseData.Comment}</td> 
-                `;
-                    expenseListBody.appendChild(newRow);
-                });
-                
-
-            });
-
-           // --------------------------------------------------
-
-            //     var user=JSON.parse(sessionStorage.getItem('user'))
+                var user=JSON.parse(sessionStorage.getItem('user'))
   
-            //     const id = user.id
-            //     const username = user.username
+      const id = user.id
+      const username = user.username
 
-                
-            //     // Fetch expense data from your API
-            //     const response = await fetch('http://localhost:8000/get_claim_request/'+id);
-            //     const expenseDataList = await response.json();
+      
+      // Fetch expense data from your API
+      const response = await fetch('http://localhost:8000/get_claim_request/'+id);
+      const expenseDataList = await response.json();
 
-            //     // Iterate over the received expense data and populate the expense list table
-            //     expenseDataList.forEach(expenseData => {
-            //         const newRow = document.createElement('tr');
-            //         newRow.innerHTML = `
-            //     <td>${expenseData.Name}</td>
-            //     <td>${expenseData.Expense_Type}</td>
-            //     <td>${expenseData.Amount}</td> 
-            //     <td>${expenseData.Date}</td>   
-            //     <td>${expenseData.Status}</td>
-            //     <td style="display:none;">${expenseData.Image_Url}</td> 
-            //     <td>  
-            //     <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
-            //     <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
-            //     </td>
-            //     <td >${expenseData.Comment}</td> 
-            // `;
-            //         expenseListBody.appendChild(newRow);
-             //   });
+      // Iterate over the received expense data and populate the expense list table
+      expenseDataList.forEach(expenseData => {
+          const newRow = document.createElement('tr');
+          newRow.innerHTML = `
+      <td>${expenseData.Name}</td>
+      <td>${expenseData.Expense_Type}</td>
+      <td>${expenseData.Amount}</td> 
+      <td>${expenseData.Date}</td>   
+      <td>${expenseData.Status}</td>
+      <td >${expenseData.Comment}</td> 
+      <td style="display:none;">${expenseData.Image_Url}</td> 
+      <td hidden>  
+       <button  class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
+      <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
+      </td>
+  
+  `;
+          expenseListBody.appendChild(newRow);
+     });
 
-            } catch (error) {
-                console.error('Error fetching expense data:', error);
-            }
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script>
-        
-    </script> -->
-</body>
-
-</html>
+  } catch (error) {
+      console.error('Error fetching expense data:', error);
+  }
+});
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
