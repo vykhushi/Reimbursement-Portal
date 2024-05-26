@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/assign_manager.css">
 </head>
+
 <body>
     <!-- <nav class="navbar">
         <div class="navbar-title">
@@ -17,25 +19,23 @@
         </div><div class="navbar-logout"><button><a href="index.html">Logout</a></button></div>
 
     </nav> -->
-
-        <nav class="navbar">
-            <div class="navbar-title">
-              EasyReimburse
-            </div>
-            <div class="right-navbar" style="display: flex;">
-              <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a></div>
-              <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail" style="padding: 10px;">
-                  Person
+    <nav class="navbar">
+        <div class="navbar-title">
+            EasyReimburse
+        </div>
+        <div class="right-navbar" style="display: flex;">
+            <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i
+                        class="fas fa-sign-out"></i></a></div>
+            <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail"
+                    style="padding: 10px;">
+                    Person
                 </span>
-              </div>
             </div>
-          </nav>
-       
-  
-
+        </div>
+    </nav>
     <div class="container">
         <div class="left-menu-container" id="leftMenuContainer">
-            
+
         </div>
         <div class="main-content-container;" style="flex: 1;">
             <h2>Assign Manager</h2>
@@ -50,65 +50,60 @@
                 </div>
                 <button type="submit">Submit</button>
             </form>
-        
         </div>
-        
-
-      </div>
+    </div>
     <footer class="footer">
         <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
     </footer>
 
     <script>
-
-document.addEventListener('DOMContentLoaded', async function () {
+         document.addEventListener('DOMContentLoaded', async function () {
             // // Fetch the left menu HTML
             const response = await fetch('left_menu.html');
             const leftMenuHTML = await response.text();
-    
+
             // Inject the left menu into the container
             const leftMenuContainer = document.getElementById('leftMenuContainer');
             leftMenuContainer.innerHTML = leftMenuHTML;
         });
 
-    
+
 
         async function assignManager(event) {
-    event.preventDefault();
-    
-    const managerEmail = document.getElementById('manager_email').value;
-    const employeeEmail = document.getElementById('employee_email').value;
+            event.preventDefault();
 
-    const url = `http://127.0.0.1:8000/assign_manager/${managerEmail}/employees/${employeeEmail}`;
-    
-    try {
-        const response = await fetch(url, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
+            const managerEmail = document.getElementById('manager_email').value;
+            const employeeEmail = document.getElementById('employee_email').value;
+
+            const url = `http://127.0.0.1:8000/assign_manager/${managerEmail}/employees/${employeeEmail}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    alert('Error: ' + (errorData.detail || 'Failed to assign manager'));
+                    return;
+                }
+
+                const result = await response.json();
+                alert('Manager assigned successfully');
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while assigning the manager');
             }
-        });
-        
-        if (!response.ok) {
-            const errorData = await response.json();
-            alert('Error: ' + (errorData.detail || 'Failed to assign manager'));
-            return;
         }
-        
-        const result = await response.json();
-        alert('Manager assigned successfully');
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred while assigning the manager');
-    }
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('assign_manager').addEventListener('submit', assignManager);
-});
-  
-        
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('assign_manager').addEventListener('submit', assignManager);
+        });
 
-</script>
+    </script>
 </body>
+
 </html>

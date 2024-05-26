@@ -28,7 +28,6 @@ class FormData(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     Employee_id=Column(Integer,ForeignKey('users.id'))
-  
     Name=Column(String(50), unique=False, nullable=False)
     Expense_Type=Column(String(50), unique=False, nullable=False)
     Amount=Column(Integer, unique=False, nullable=False)

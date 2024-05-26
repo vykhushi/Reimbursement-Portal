@@ -11,13 +11,13 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
- <style>
-  .dashboard-items {
+  <style>
+    .dashboard-items {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
- </style>
+  </style>
 
 </head>
 
@@ -27,7 +27,8 @@
       EasyReimburse
     </div>
     <div class="right-navbar">
-      <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a></div>
+      <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a>
+      </div>
       <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail" style="padding: 10px;">
           Person
         </span>
@@ -39,7 +40,7 @@
 
   </nav>
 
-  <div class="container m-0 p-0"  style="max-width: 100%;">
+  <div class="container m-0 p-0" style="max-width: 100%;">
     <div class="left-menu">
 
       <ul>
@@ -69,7 +70,7 @@
             <a href="manage_dept.html" class="btn btn-primary">Click Here</a>
           </div>
         </div>
-        
+
         <div class="card" style="width: 18rem;">
           <img src="images/manage_emp.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -78,14 +79,6 @@
             <a href="assign_manager.html" class="btn btn-primary">Click Here</a>
           </div>
         </div>
-
-        <!-- <div class="card" style="width: 18rem;">
-          <img src="images/manage_emp.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Records</h5>
-            <p class="card-text"></p>
-            <a href="expense-list.html" class="btn btn-primary">Click Here</a>
-          </div> -->
 
       </div>
 
@@ -97,13 +90,12 @@
           <a href="suboordinates.html" class="btn btn-primary">Click Here</a>
         </div>
       </div>
-      
-      </div>
+
     </div>
   </div>
   </div>
   </div>
-
+  </div>
 
 </body>
 
@@ -117,8 +109,8 @@
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 
-  var user=JSON.parse(sessionStorage.getItem('user'))
-  
+  var user = JSON.parse(sessionStorage.getItem('user'))
+
   const email = user.email
   const username = user.username
 
@@ -127,8 +119,6 @@
   console.log(email, userDetail);
 
 </script>
-
-
 
 </body>
 
