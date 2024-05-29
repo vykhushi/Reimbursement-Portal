@@ -95,7 +95,7 @@
                     <td>${employee.email}</td>
                     <td hidden>${employee.password}</td>
                     <td hidden>${employee.role}</td>
-                    <td>${employee.department}</td><td
+                    <td>${employee.department}</td>
                     <td hidden>${employee.is_admin}</td>
                     <td hidden>${employee.manager_id}</td>
                 `;
@@ -121,7 +121,7 @@
                 const employeeRows = document.querySelectorAll('#userList tr');
                 const employeeIds = Array.from(employeeRows).map(row => row.getAttribute('data-employee-id'));
 
-          
+
 
                 // Debugging: log employee IDs
                 console.log('Employee IDs:', employeeIds);
@@ -131,7 +131,7 @@
                     throw new Error('One or more employee IDs are null or undefined');
                 }
                 sessionStorage.setItem('subordinatesIds', JSON.stringify(employeeIds))
-                window.location.href='expense-list.html';
+                window.location.href = 'expense-list.html';
                 //Fetch claim request data for each employee
                 employeeIds.forEach(async (id) => {
                     const response = await fetch(`http://127.0.0.1:8000/get_claim_request/${id}`);
@@ -145,16 +145,16 @@
 
                     // Display the fetched claim request da
                     console.log('Claim requests for employee ID:', id, claimsData);
-                    
-              
-                console.log(claimRequests)
-                
 
-                // Populate the expense list table with the fetched data
-                const expenseListBody = document.getElementById('expenseListBody');
-                 claimRequests.forEach(expenseData => {
-                    const newRow = document.createElement('tr');
-                    newRow.innerHTML = `
+
+                    console.log(claimRequests)
+
+
+                    // Populate the expense list table with the fetched data
+                    const expenseListBody = document.getElementById('expenseListBody');
+                    claimRequests.forEach(expenseData => {
+                        const newRow = document.createElement('tr');
+                        newRow.innerHTML = `
                     <td>${expenseData.Name}</td>
                     <td>${expenseData.Expense_Type}</td>
                     <td>${expenseData.Amount}</td> 
@@ -167,11 +167,11 @@
                     </td>
                     <td>${expenseData.Comment}</td> 
                 `;
-                    expenseListBody.appendChild(newRow);
+                        expenseListBody.appendChild(newRow);
+                    });
+
+
                 });
-
-
-            });
                 console.log('All claim requests:', claimRequests);
 
             }
@@ -179,6 +179,16 @@
                 console.error('Error:', error);
             }
         }
+
+
+        var user = JSON.parse(sessionStorage.getItem('user'))
+
+        const email = user.email
+        const username = user.username
+
+        const userDetail = document.getElementById("userDetail");
+        userDetail.innerHTML = username;
+        console.log(email, userDetail);
 
 
 

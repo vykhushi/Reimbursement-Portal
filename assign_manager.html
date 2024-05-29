@@ -57,7 +57,7 @@
     </footer>
 
     <script>
-         document.addEventListener('DOMContentLoaded', async function () {
+        document.addEventListener('DOMContentLoaded', async function () {
             // // Fetch the left menu HTML
             const response = await fetch('left_menu.html');
             const leftMenuHTML = await response.text();
@@ -102,6 +102,18 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('assign_manager').addEventListener('submit', assignManager);
         });
+
+
+        var user = JSON.parse(sessionStorage.getItem('user'))
+
+        const email = user.email
+        const username = user.username
+
+        const userDetail = document.getElementById("userDetail");
+        userDetail.innerHTML = username;
+        console.log(email, userDetail);
+
+
 
     </script>
 </body>

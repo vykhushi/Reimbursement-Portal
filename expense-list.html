@@ -27,16 +27,18 @@
 
     <nav class="navbar">
         <div class="navbar-title">
-          EasyReimburse
+            EasyReimburse
         </div>
         <div class="right-navbar" style="display: flex;">
-          <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i class="fas fa-sign-out"></i></a></div>
-          <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail" style="padding: 10px;">
-              Person
-            </span>
-          </div>
+            <div class="navbar-logout" style="padding-right: 15px;"><a href="index.html"><i
+                        class="fas fa-sign-out"></i></a></div>
+            <div class="account"><a href="#"><i class="fas fa-user"></i></a><span id="userDetail"
+                    style="padding: 10px;">
+                    Person
+                </span>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div class="container m-0 p-0" style="display: flex;">
         <!-- <div class="left-menu-container">
             <div id="leftMenuContainer"> 
@@ -45,8 +47,8 @@
         <div class="left-menu">
             <ul>
                 <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
-                
-                <li><i class="fas fa-book"><a href="">Policy</a></i></li> 
+
+                <li><i class="fas fa-book"><a href="">Policy</a></i></li>
             </ul>
         </div>
 
@@ -83,8 +85,9 @@
                     <p id="exp-type"></p>
                     <p id="exp-amt"></p>
                     <p id="exp-date"></p>
-                    <img id="exp-image" src="" height="200px" width="150px"/><br><br>
-                    <p style="display: flex;"><strong>Comment:</strong><textarea style="margin-left: 5px;" name="claim-comment" id="claim-xp"></textarea></p>
+                    <img id="exp-image" src="" height="200px" width="150px" /><br><br>
+                    <p style="display: flex;"><strong>Comment:</strong><textarea style="margin-left: 5px;"
+                            name="claim-comment" id="claim-xp"></textarea></p>
                     <input type="hidden" id="form-id" />
                 </div>
                 <div class="modal-footer">
@@ -102,16 +105,16 @@
         let newStatus;
         let expenseId;
         async function updateStatus(button, id) {
-            
+
             expenseId = id;
             console.log(button.id, id, "button");
-            
-            if(button.id === "approve-button"){
+
+            if (button.id === "approve-button") {
                 newStatus = "approved";
-            } else{
+            } else {
                 newStatus = "rejected";
             }
-            
+
             var row = button.closest('tr');
             var tds = row.getElementsByTagName('td');
             var name = tds[0].textContent;
@@ -124,36 +127,36 @@
             document.getElementById("exp-type").innerHTML = "<strong>Expense type: </strong>" + category;
             document.getElementById("exp-amt").innerHTML = "<strong>Expense amount: </strong>" + amount;
             document.getElementById("exp-date").innerHTML = "<strong>Claim date: </strong>" + date;
-            document.getElementById("exp-image").src = imageurl; 
+            document.getElementById("exp-image").src = imageurl;
         }
 
-        async function updateRequest(){
+        async function updateRequest() {
             const textarea = document.getElementById('claim-xp');
             // Get the value of the textarea
             const commentValue = textarea.value;
 
             let comment = commentValue;
             try {
-            const response = await fetch(`http://localhost:8000/expense/${expenseId}?Status=${newStatus}&Comment=${encodeURIComponent(comment)}`, {
-                method: 'PUT',
-                // body: JSON.stringify({
-                //     Status: newStatus
-                // })
-            });
+                const response = await fetch(`http://localhost:8000/expense/${expenseId}?Status=${newStatus}&Comment=${encodeURIComponent(comment)}`, {
+                    method: 'PUT',
+                    // body: JSON.stringify({
+                    //     Status: newStatus
+                    // })
+                });
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const responseData = await response.json();
+                console.log(responseData); // Log response data received from backend
+
+                alert('Form updated successfully!');
+                location.reload();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form. Please try again.');
             }
-
-            const responseData = await response.json();
-            console.log(responseData); // Log response data received from backend
-            
-            alert('Form updated successfully!');
-            location.reload(); 
-        } catch (error) {
-            console.error('Error:', error);
-            alert('An error occurred while submitting the form. Please try again.');
-        }
         }
 
 
@@ -171,28 +174,28 @@
         document.addEventListener('DOMContentLoaded', async function () {
             const expenseListBody = document.getElementById('expenseListBody');
 
-            const employeeIds=  JSON.parse(sessionStorage.getItem('subordinatesIds'))
-            console.log(employeeIds) 
+            const employeeIds = JSON.parse(sessionStorage.getItem('subordinatesIds'))
+            console.log(employeeIds)
             try {
-                
+
                 employeeIds.forEach(async (id) => {
                     const response = await fetch(`http://127.0.0.1:8000/get_claim_request/${id}`);
                     if (!response.ok) {
                         throw new Error(`Failed to fetch claim requests for employee ID: ${id}`);
                     }
                     const claimsData = await response.json();
-                   
+
 
                     // claimRequests.push(claimsData);
 
                     // Display the fetched claim request da
                     console.log('Claim requests for employee ID:', id, claimsData);
-    
-                // Populate the expense list table with the fetched data
-                const expenseListBody = document.getElementById('expenseListBody');
-                 claimsData.forEach(expenseData => {
-                    const newRow = document.createElement('tr');
-                    newRow.innerHTML = `
+
+                    // Populate the expense list table with the fetched data
+                    const expenseListBody = document.getElementById('expenseListBody');
+                    claimsData.forEach(expenseData => {
+                        const newRow = document.createElement('tr');
+                        newRow.innerHTML = `
                     <td>${expenseData.Name}</td>
                     <td>${expenseData.Expense_Type}</td>
                     <td>${expenseData.Amount}</td> 
@@ -205,45 +208,58 @@
                     </td>
                     <td>${expenseData.Comment}</td> 
                 `;
-                    expenseListBody.appendChild(newRow);
+                        expenseListBody.appendChild(newRow);
+                    });
                 });
-            });
 
-           // --------------------------------------------------
+                // --------------------------------------------------
 
-            //     var user=JSON.parse(sessionStorage.getItem('user'))
-  
-            //     const id = user.id
-            //     const username = user.username
+                //     var user=JSON.parse(sessionStorage.getItem('user'))
 
-                
-            //     // Fetch expense data from your API
-            //     const response = await fetch('http://localhost:8000/get_claim_request/'+id);
-            //     const expenseDataList = await response.json();
+                //     const id = user.id
+                //     const username = user.username
 
-            //     // Iterate over the received expense data and populate the expense list table
-            //     expenseDataList.forEach(expenseData => {
-            //         const newRow = document.createElement('tr');
-            //         newRow.innerHTML = `
-            //     <td>${expenseData.Name}</td>
-            //     <td>${expenseData.Expense_Type}</td>
-            //     <td>${expenseData.Amount}</td> 
-            //     <td>${expenseData.Date}</td>   
-            //     <td>${expenseData.Status}</td>
-            //     <td style="display:none;">${expenseData.Image_Url}</td> 
-            //     <td>  
-            //     <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
-            //     <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
-            //     </td>
-            //     <td >${expenseData.Comment}</td> 
-            // `;
-            //         expenseListBody.appendChild(newRow);
-             //   });
+
+                //     // Fetch expense data from your API
+                //     const response = await fetch('http://localhost:8000/get_claim_request/'+id);
+                //     const expenseDataList = await response.json();
+
+                //     // Iterate over the received expense data and populate the expense list table
+                //     expenseDataList.forEach(expenseData => {
+                //         const newRow = document.createElement('tr');
+                //         newRow.innerHTML = `
+                //     <td>${expenseData.Name}</td>
+                //     <td>${expenseData.Expense_Type}</td>
+                //     <td>${expenseData.Amount}</td> 
+                //     <td>${expenseData.Date}</td>   
+                //     <td>${expenseData.Status}</td>
+                //     <td style="display:none;">${expenseData.Image_Url}</td> 
+                //     <td>  
+                //     <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
+                //     <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
+                //     </td>
+                //     <td >${expenseData.Comment}</td> 
+                // `;
+                //         expenseListBody.appendChild(newRow);
+                //   });
 
             } catch (error) {
                 console.error('Error fetching expense data:', error);
             }
         });
+
+
+        var user = JSON.parse(sessionStorage.getItem('user'))
+
+        const email = user.email
+        const username = user.username
+
+        const userDetail = document.getElementById("userDetail");
+        userDetail.innerHTML = username;
+        console.log(email, userDetail);
+
+
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

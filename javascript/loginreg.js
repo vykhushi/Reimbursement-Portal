@@ -189,7 +189,7 @@ var passwordInput = document.getElementById("registerPassword");
             // Populate the dropdown select element with department options
             departments.forEach(department => {
                 const option = document.createElement('option');
-                option.value = department.id; // Set the value to department ID
+                option.value = department.dept_name; // Set the value to department ID
                 option.textContent = department.dept_name; // Set the display text to department name
                 registerDepartmentSelect.appendChild(option);
             });

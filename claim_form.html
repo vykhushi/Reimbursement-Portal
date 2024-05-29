@@ -167,6 +167,15 @@
         // Add event listener to the form submit event
         document.getElementById('expenseForm').addEventListener('submit', validateAndSubmit);
 
+        var user = JSON.parse(sessionStorage.getItem('user'))
+
+        const email = user.email
+        const username = user.username
+
+        const userDetail = document.getElementById("userDetail");
+        userDetail.innerHTML = username;
+        console.log(email, userDetail);
+
 
 
     </script>
