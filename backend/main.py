@@ -230,13 +230,17 @@ async def submit_form(
          # Save the uploaded image file to the "receipt_images" folder
         contents = await file.read()
         image_filename = f"{uuid.uuid4()}.jpg"
-        image_path = os.path.join("receiptimage", image_filename)
-
+        current_folder = os.getcwd()
+        parent_folder = os.path.dirname(current_folder)
+        target_folder = os.path.join(parent_folder, "claimImages")
+        os.makedirs(target_folder, exist_ok=True)
+        image_path = os.path.join(target_folder, image_filename)
+    
         with open(image_path, "wb") as image_file:
             image_file.write(contents)
 
         # Construct the Image_Url for the FormData object
-        image_url = f"/receiptimage/{image_filename}"
+        image_url = f"/claimImages/{image_filename}"
 
         # Create a FormData object to store in the database
         db_form_data = FormData(
