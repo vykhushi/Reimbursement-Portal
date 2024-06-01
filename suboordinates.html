@@ -31,10 +31,9 @@
     <div class="container">
         <div class="left-menu">
             <ul>
-                <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
-                <!-- <li><i class="fas fa-indian-rupee-sign"><a href="claim_form.html">Reimbursement</a></i></li>
-                    <li><i class="fas fa-list"><a href="expense-list.html">Records</a></i></li> -->
-                <li><i class="fas fa-book"><a href="">Policy</a></i></li>
+
+                <li><i class="fas fa-home"><a href="#" id="homeLink">Home</a></i></li>
+               <li><i class="fas fa-book"><a href="policy.html">Policy</a></i></li>
             </ul>
         </div>
         <div class="main-content">
@@ -69,6 +68,19 @@
     </footer>
 
     <script>
+
+        const isAdmin = sessionStorage.getItem('isAdmin');
+        
+        // Get the Home link element
+        const homeLink = document.getElementById('homeLink');
+        
+        // Set the href attribute based on the value of isAdmin
+        if (isAdmin === 'true') {
+            homeLink.href = 'dashboard.html';
+        } else {
+            homeLink.href = 'manager_dashboard.html';
+        }
+
         document.addEventListener('DOMContentLoaded', async () => {
             try {
                 // Retrieve manager's email from session storage

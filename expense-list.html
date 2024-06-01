@@ -40,15 +40,11 @@
         </div>
     </nav>
     <div class="container m-0 p-0" style="display: flex;">
-        <!-- <div class="left-menu-container">
-            <div id="leftMenuContainer"> 
-            </div>
-        </div> -->
         <div class="left-menu">
             <ul>
-                <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
+                <li><i class="fas fa-home"><a href="#" id="homeLink">Home</a></i></li>
 
-                <li><i class="fas fa-book"><a href="">Policy</a></i></li>
+                <li><i class="fas fa-book"><a href="policy.html">Policy</a></i></li>
             </ul>
         </div>
 
@@ -85,7 +81,9 @@
                     <p id="exp-type"></p>
                     <p id="exp-amt"></p>
                     <p id="exp-date"></p>
-                    <img id="exp-image" src="" height="200px" width="150px" /><br><br>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img id="exp-image" src="" height="200px" width="150px" /><br><br>
+                    </a><br><br>
                     <p style="display: flex;"><strong>Comment:</strong><textarea style="margin-left: 5px;"
                             name="claim-comment" id="claim-xp"></textarea></p>
                     <input type="hidden" id="form-id" />
@@ -101,7 +99,30 @@
         <p>&copy; 2024 Reimbursement Portal. All rights reserved.</p>
     </footer>
 
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="imageModalLabel">Receipt</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="large-exp-image" src="" style="width: 100%;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+
+
+
+        // JavaScript to handle the image click event and display the larger image in the modal
+        document.getElementById('exp-image').addEventListener('click', function () {
+            var src = this.src;
+            document.getElementById('large-exp-image').src = src;
+        });
+
         let newStatus;
         let expenseId;
         async function updateStatus(button, id) {
@@ -109,11 +130,17 @@
             expenseId = id;
             console.log(button.id, id, "button");
 
+            // Disable the button
+            // button.disabled = true;
+
+
+
             if (button.id === "approve-button") {
                 newStatus = "approved";
             } else {
                 newStatus = "rejected";
             }
+
 
             var row = button.closest('tr');
             var tds = row.getElementsByTagName('td');
@@ -129,6 +156,8 @@
             document.getElementById("exp-date").innerHTML = "<strong>Claim date: </strong>" + date;
             document.getElementById("exp-image").src = imageurl;
         }
+
+
 
         async function updateRequest() {
             const textarea = document.getElementById('claim-xp');
@@ -210,39 +239,7 @@
                 `;
                         expenseListBody.appendChild(newRow);
                     });
-                });
-
-                // --------------------------------------------------
-
-                //     var user=JSON.parse(sessionStorage.getItem('user'))
-
-                //     const id = user.id
-                //     const username = user.username
-
-
-                //     // Fetch expense data from your API
-                //     const response = await fetch('http://localhost:8000/get_claim_request/'+id);
-                //     const expenseDataList = await response.json();
-
-                //     // Iterate over the received expense data and populate the expense list table
-                //     expenseDataList.forEach(expenseData => {
-                //         const newRow = document.createElement('tr');
-                //         newRow.innerHTML = `
-                //     <td>${expenseData.Name}</td>
-                //     <td>${expenseData.Expense_Type}</td>
-                //     <td>${expenseData.Amount}</td> 
-                //     <td>${expenseData.Date}</td>   
-                //     <td>${expenseData.Status}</td>
-                //     <td style="display:none;">${expenseData.Image_Url}</td> 
-                //     <td>  
-                //     <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
-                //     <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
-                //     </td>
-                //     <td >${expenseData.Comment}</td> 
-                // `;
-                //         expenseListBody.appendChild(newRow);
-                //   });
-
+                })
             } catch (error) {
                 console.error('Error fetching expense data:', error);
             }
@@ -259,6 +256,14 @@
         console.log(email, userDetail);
 
 
+
+        const isAdmin = sessionStorage.getItem('isAdmin');
+        const homeLink = document.getElementById('homeLink');
+        if (isAdmin === 'true') {
+            homeLink.href = 'dashboard.html';
+        } else {
+            homeLink.href = 'manager_dashboard.html';
+        }
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

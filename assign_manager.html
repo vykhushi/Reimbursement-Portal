@@ -41,13 +41,24 @@
             <h2>Assign Manager</h2>
             <form id="assign_manager">
                 <div class="form-group">
-                    <label for="manager">Mananger EmailId</label>
-                    <input type="email" id="manager_email" name="manager_email" required>
+                    <label for="deptId">Employee EmailId</label>
+                    <!-- <input type="email" id="employee_email" name="employee_email" required> -->
+                    <select id="employee_email" name="employee_email" required>
+                        <option value="">Select Employee</option>
+                    </select>
                 </div>
                 <div class="form-group">
+
+                    <label for="manager">Mananger EmailId</label>
+                    <!-- <input type="email" id="manager_email" name="manager_email" required> -->
+                    <select id="manager_email" name="manager_email" required>
+                        <option value="">Select Manager</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
                     <label for="deptId">Employee EmailId</label>
                     <input type="email" id="employee_email" name="employee_email" required>
-                </div>
+                </div> -->
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -65,7 +76,37 @@
             // Inject the left menu into the container
             const leftMenuContainer = document.getElementById('leftMenuContainer');
             leftMenuContainer.innerHTML = leftMenuHTML;
+
+
+            // Fetch employees and populate employee select dropdown
+            const employeeSelect = document.getElementById('employee_email');
+            await populateSelect(employeeSelect, 'http://127.0.0.1:8000/employees/');
+
+            // Fetch managers and populate manager select dropdown
+            const managerSelect = document.getElementById('manager_email');
+            await populateSelect(managerSelect,'http://127.0.0.1:8000/managers/');
         });
+
+
+
+        async function populateSelect(selectElement, apiUrl) {
+            try {
+                const response = await fetch(apiUrl);
+                const users = await response.json();
+
+                users.forEach(user => {
+                    const option = document.createElement('option');
+                    option.value = user.email;
+                    option.textContent = user.email;
+                    selectElement.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while fetching data');
+            }
+        }
+
+
 
 
 

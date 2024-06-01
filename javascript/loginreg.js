@@ -65,6 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log(data.is_admin);
                     // Assuming the response contains the username and other details
                     sessionStorage.setItem('user', JSON.stringify(data));
+                    sessionStorage.setItem('isAdmin',data.is_admin)
+                    
                    // sessionStorage.setItem('username', password);
 
 
@@ -77,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             
             if (data.is_admin){
-                window.location.href = 'http://127.0.0.1:5500/dashboard.html'; 
+                 window.location.href = 'http://127.0.0.1:5500/dashboard.html'; 
             }
 
             else {
-                window.location.href = 'http://127.0.0.1:5500/manager_dashboard.html';
+                 window.location.href = 'http://127.0.0.1:5500/manager_dashboard.html';
             }
                  
             } else {

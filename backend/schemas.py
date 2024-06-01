@@ -1,4 +1,3 @@
-
 from pydantic import BaseModel
 from typing import Optional
 from datetime import date
@@ -35,7 +34,6 @@ class GetFormData(BaseModel):
 
 
 class AddDepartment(BaseModel):
-   
     dept_name:str
 
    

@@ -109,3 +109,18 @@ th {
     background-color: red;
     color: #fff;
 }
+
+.status-pending {
+    background-color: yellow;
+    color: black;
+}
+
+.status-approved {
+    background-color: green;
+    color: white;
+}
+
+.status-rejected {
+    background-color: red;
+    color: white;
+}

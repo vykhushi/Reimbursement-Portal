@@ -1,0 +1,35 @@
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.policy-card {
+    background: #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.policy-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.policy-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.policy-card p {
+    color: #555;
+}
+
+.policy-card ul {
+    padding-left: 20px;
+}
+
+.policy-card ul li {
+    margin-bottom: 10px;
+}

@@ -59,14 +59,13 @@ logging.basicConfig(
 
 # API endpoint to create a new user
 
-@app.post("/users/", response_model=None, status_code=status.HTTP_201_CREATED)
+@app.post("/users/", response_model=CreateUser, status_code=status.HTTP_201_CREATED)
 def create_user(user: CreateUser, db: Session = Depends(get_db)):
-    try:  
-          
+    try:      
         admin_user = db.query(DBUser).filter(DBUser.role == 'admin').first()
         if not admin_user:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Admin user not found")
-          
+        print("abc")
         db_user = DBUser(
               
               username=user.username,
@@ -77,13 +76,11 @@ def create_user(user: CreateUser, db: Session = Depends(get_db)):
               manager_id=admin_user.id  
               
             )
+        
         db.add(db_user)
         db.commit()
         db.refresh(db_user)
-        return db_user
-    
-    
-       
+        return db_user 
     
     except Exception as e:
       logging.error(f"Failed to create user: {e}")
@@ -115,9 +112,6 @@ def authenticate_user(user_data:UserAuthenticate, db: Session = Depends(get_db))
     except Exception as e:
         logging.error(f"Failed to authenticate user: {e}")
     raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to authenticate user")
-
-
-
 
 
 def designate_user_as_admin(email: str, db: Session):
@@ -198,10 +192,24 @@ def get_employees_managed_by_manager(manager_email: str, db: Session = Depends(g
         logging.error(f"Failed to retrieve employees managed by manager: {e}")
         raise
 
+#API endpoint to find employees
+@app.get("/employees/", response_model=None)
+def read_employee_users(db: Session = Depends(get_db)):
+    employees = db.query(DBUser).filter(DBUser.role == 'employee').all()
+    return employees
+
+
+
+#API endpoint to find managers
+@app.get("/managers/", response_model=None)
+def read_manager_users(db: Session = Depends(get_db)):
+    managers = db.query(DBUser).filter(DBUser.role == 'manager').all()
+    return managers
+
+
 
 
 #API endpoint to submit the claim form
-
 @app.post("/forms/", response_model=GetFormData)
 async def submit_form(
     request:Request,
@@ -276,8 +284,15 @@ def get_data(db: Session = Depends(get_db)):
     for i in range(len(form_data_list)):
         print(form_data_list[i].id)
     return form_data_list
-          
 
+
+#API endpoint to get  claim request of a particular employee
+@app.get("/get_claim_request/{id}", response_model=None)
+def read_users(id:int,db: Session = Depends(get_db)):
+    claims = db.query(FormData).filter(FormData.Employee_id==id).all()
+    return claims
+
+       
 #API endpoint to update the status of employee
 @app.put("/expense/{form_id}")
 async def update_form(
@@ -322,8 +337,21 @@ def read_users(db: Session = Depends(get_db)):
     
     users = db.query(DBUser).all()
     for i in range(len(users)):
-        print(users[i].id)
-    return users
+        return users
+    
+
+#API endpoint to get user by email 
+@app.get("/get_user/{email}", response_model=None)
+def read_users(email:str,db: Session = Depends(get_db)): 
+    user = db.query(DBUser).filter(DBUser.email==email).first()
+    return user
+
+
+#API endpoint to get subordinates
+@app.get("/get_subordinates/{id}", response_model=None)
+def read_users(id:int,db: Session = Depends(get_db)):
+    subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
+    return subordinates
    
 
 #API endpoint to create department(add dept)
@@ -355,26 +383,6 @@ def delete_department(department_id: int, db: Session = Depends(get_db)):
     db.commit()
     return {"detail": "Department deleted successfully"}
 
-
-#API endpoint to get user by email 
-@app.get("/get_user/{email}", response_model=None)
-def read_users(email:str,db: Session = Depends(get_db)): 
-    user = db.query(DBUser).filter(DBUser.email==email).first()
-    return user
-
-
-#API endpoint to get subordinates
-@app.get("/get_subordinates/{id}", response_model=None)
-def read_users(id:int,db: Session = Depends(get_db)):
-    subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
-    return subordinates
-
-
-#API endpoint to get  claim request of a particular employee
-@app.get("/get_claim_request/{id}", response_model=None)
-def read_users(id:int,db: Session = Depends(get_db)):
-    claims = db.query(FormData).filter(FormData.Employee_id==id).all()
-    return claims
 
 
 if __name__ == "__main__":
