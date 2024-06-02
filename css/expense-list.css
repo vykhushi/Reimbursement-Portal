@@ -35,6 +35,7 @@ body .container{
 
 .nav-list-item{
   display: flex;
+  font-family: var(--font1);
 
 }
 .left-menu ul li a {

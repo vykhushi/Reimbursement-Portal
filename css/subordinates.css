@@ -7,6 +7,7 @@
       font-size: 24px;
       font-weight: bold;
       height: 50px;
+      font-family: var(--font2);
     
   }
   .right-navbar{

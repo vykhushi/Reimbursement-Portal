@@ -130,10 +130,6 @@
             expenseId = id;
             console.log(button.id, id, "button");
 
-            // Disable the button
-            // button.disabled = true;
-
-
 
             if (button.id === "approve-button") {
                 newStatus = "approved";
@@ -143,6 +139,7 @@
 
 
             var row = button.closest('tr');
+            console.log(row)
             var tds = row.getElementsByTagName('td');
             var name = tds[0].textContent;
             var category = tds[1].textContent;
@@ -156,8 +153,6 @@
             document.getElementById("exp-date").innerHTML = "<strong>Claim date: </strong>" + date;
             document.getElementById("exp-image").src = imageurl;
         }
-
-
 
         async function updateRequest() {
             const textarea = document.getElementById('claim-xp');
@@ -223,17 +218,37 @@
                     // Populate the expense list table with the fetched data
                     const expenseListBody = document.getElementById('expenseListBody');
                     claimsData.forEach(expenseData => {
+
+                         // Determine the color based on the status
+                let statusColor;
+                switch (expenseData.Status) {
+                    case 'approved':
+                        statusColor = 'green';
+                        break;
+                    case 'rejected':
+                        statusColor = 'red';
+                        break;
+                    case 'pending':
+                        statusColor = 'blue';
+                        break;
+                    default:
+                        statusColor = 'black';
+                }
+
+
+
                         const newRow = document.createElement('tr');
                         newRow.innerHTML = `
                     <td>${expenseData.Name}</td>
                     <td>${expenseData.Expense_Type}</td>
                     <td>${expenseData.Amount}</td> 
                     <td>${expenseData.Date}</td>   
-                    <td>${expenseData.Status}</td>
+                    <td style="color: ${statusColor};">${expenseData.Status}</td> 
+                   
                     <td style="display:none;">${expenseData.Image_Url}</td> 
                     <td>  
-                        <button class="action-button action-approve" id="approve-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
-                        <button class="action-button action-reject" id="reject-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
+                        <button class="action-button action-approve" id="approve-button"  ${expenseData.Status !== "pending" ? 'disabled' : ''}   data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});"><i class="fas fa-check"></i></button>
+                        <button class="action-button action-reject" id="reject-button"  ${expenseData.Status !== "pending" ? 'disabled' : ''}  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="updateStatus(this,${expenseData.id});""><i class="fas fa-times"></i></button>
                     </td>
                     <td>${expenseData.Comment}</td> 
                 `;
