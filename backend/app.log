@@ -9579,3 +9579,1851 @@
 2024-06-01 23:04:38,692 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
 2024-06-01 23:04:38,695 - DEBUG - Using proactor: IocpProactor
 2024-06-01 23:04:38,706 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 12:59:03,894 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:03,919 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 12:59:03,926 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:03,953 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 12:59:03,958 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:03,964 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 12:59:03,979 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,003 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 12:59:04,004 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,010 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 12:59:04,017 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,026 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 12:59:04,028 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,039 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 12:59:04,040 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,063 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 12:59:04,066 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,088 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserbc56d09f@example.com "HTTP/1.1 204 No Content"
+2024-06-02 12:59:04,092 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,109 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 12:59:04,111 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,115 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 12:59:04,122 - DEBUG - Using proactor: IocpProactor
+2024-06-02 12:59:04,132 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:04:34,259 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,285 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:04:34,288 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,316 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:04:34,321 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,328 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:04:34,345 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,360 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:04:34,367 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,375 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:04:34,381 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,388 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:04:34,389 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,392 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:04:34,403 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,419 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:04:34,419 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,440 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser816687ef@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:04:34,447 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,460 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:04:34,462 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,470 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:04:34,474 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:04:34,483 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,629 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,655 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,661 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,687 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:09:22,687 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,699 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:09:22,712 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,731 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:09:22,736 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,746 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,749 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,757 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:09:22,758 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,768 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:09:22,770 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,792 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:09:22,793 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,813 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserf76305dd@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:09:22,821 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,836 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,839 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,848 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,853 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,860 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:22,864 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:22,869 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 400 Bad Request"
+2024-06-02 13:09:53,990 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,013 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:54,022 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,050 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:09:54,056 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,066 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:09:54,080 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,105 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:09:54,107 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,115 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:54,121 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,130 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:09:54,132 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,139 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:09:54,139 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,161 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:09:54,161 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,182 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserdc9bb396@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:09:54,186 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,201 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:54,203 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,211 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:54,214 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,225 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:09:54,229 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:09:54,233 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 400 Bad Request"
+2024-06-02 13:10:26,771 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,792 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:10:26,797 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,824 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:10:26,830 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,838 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:10:26,852 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,874 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:10:26,876 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,885 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:10:26,890 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,897 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:10:26,902 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,908 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:10:26,914 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,931 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:10:26,934 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,955 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser8f2ec16a@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:10:26,957 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,976 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:10:26,977 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:26,987 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:10:26,990 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:27,000 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:10:27,006 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:10:27,008 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 400 Bad Request"
+2024-06-02 13:13:43,569 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,593 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:13:43,599 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,625 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:13:43,628 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,640 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:13:43,655 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,676 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:13:43,676 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,688 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:13:43,694 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,700 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:13:43,703 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,708 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:13:43,716 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,735 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:13:43,735 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,759 - INFO - HTTP Request: DELETE http://testserver/users/deleteusera4fd7276@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:13:43,761 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,772 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:13:43,772 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,784 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:13:43,790 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:13:43,801 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,422 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,454 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,456 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,484 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:15:04,490 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,500 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:15:04,513 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,534 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:15:04,540 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,553 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,555 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,562 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:15:04,568 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,575 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:15:04,578 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,595 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:15:04,598 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,617 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserfa3e872b@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:15:04,624 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,643 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,644 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,651 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,657 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,667 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:15:04,668 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:15:04,674 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,674 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,674 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:15:04,674 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,674 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:15:04,674 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:15:04,676 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:15:04,678 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:15:04,680 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:15:04,680 - DEBUG - Calling on_end with no data
+2024-06-02 13:15:04,702 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,503 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,528 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,535 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,563 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:20:54,570 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,578 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:20:54,596 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,618 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:20:54,620 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,629 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,634 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,639 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:20:54,643 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,652 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:20:54,654 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,673 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:20:54,674 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,695 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserfa043e2e@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:20:54,703 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,720 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,723 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,730 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,734 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,739 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:20:54,748 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,750 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:20:54,755 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:20:54,755 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:20:54,755 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:20:54,755 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:20:54,755 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,755 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:20:54,756 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,756 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:20:54,756 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:20:54,756 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:20:54,756 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:20:54,756 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:20:54,756 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:20:54,756 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:20:54,756 - DEBUG - Calling on_end with no data
+2024-06-02 13:20:54,771 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,284 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,316 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,324 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,350 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:23:53,357 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,365 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:23:53,381 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,402 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:23:53,405 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,416 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,418 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,426 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:23:53,426 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,437 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:23:53,441 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,459 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:23:53,459 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,478 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserd77e18d3@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:23:53,489 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,504 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,506 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,514 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,520 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,527 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:23:53,533 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:23:53,535 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,535 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:23:53,535 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:23:53,535 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,535 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,535 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:23:53,535 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,535 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,535 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,537 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:23:53,537 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:23:53,538 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,538 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:23:53,539 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:23:53,539 - DEBUG - Calling on_end with no data
+2024-06-02 13:23:53,560 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,449 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,476 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,482 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,509 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:25:45,517 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,525 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:25:45,538 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,562 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:25:45,565 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,574 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,577 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,584 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:25:45,589 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,596 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:25:45,599 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,618 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:25:45,624 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,643 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser0c232e90@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:25:45,654 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,666 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,669 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,687 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,687 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,694 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,702 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,710 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:25:45,715 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:25:45,716 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,716 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:25:45,716 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:25:45,716 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,716 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,718 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:25:45,718 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,718 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,718 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,719 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:25:45,720 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:25:45,720 - DEBUG - Calling on_end with no data
+2024-06-02 13:25:45,741 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,509 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,535 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,537 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,565 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:26:31,572 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,578 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:26:31,597 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,615 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:26:31,619 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,629 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,634 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,637 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:26:31,644 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,652 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:26:31,652 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,674 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:26:31,676 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,695 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserccc16286@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:26:31,711 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,722 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,727 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,744 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,746 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,754 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,758 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,766 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:26:31,770 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:26:31,770 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,770 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:26:31,775 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:26:31,777 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:26:31,777 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,777 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:26:31,779 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,779 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:26:31,780 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:26:31,780 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:26:31,780 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:26:31,780 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:26:31,780 - DEBUG - Calling on_end with no data
+2024-06-02 13:26:31,799 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,267 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,295 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,300 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,333 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:29:57,342 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,348 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:29:57,365 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,392 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:29:57,395 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,405 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,405 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,418 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:29:57,422 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,431 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:29:57,431 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,453 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:29:57,456 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,480 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserd6790000@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:29:57,485 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,495 - INFO - HTTP Request: GET http://testserver/get_claim_request/1 "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,509 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,523 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,525 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,544 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,544 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,554 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,556 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,572 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:29:57,574 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:29:57,578 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,578 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:29:57,578 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:29:57,578 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,578 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,578 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:29:57,580 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:29:57,581 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,581 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:29:57,585 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,585 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:29:57,585 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:29:57,585 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:29:57,585 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:29:57,585 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:29:57,585 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:29:57,585 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:29:57,585 - DEBUG - Calling on_end with no data
+2024-06-02 13:29:57,604 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,541 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,565 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,573 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,598 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:30:59,611 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,615 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:30:59,631 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,655 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:30:59,655 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,664 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,669 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,676 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:30:59,682 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,686 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:30:59,690 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,708 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:30:59,708 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,730 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser64e08100@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:30:59,748 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,759 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,760 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,777 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,777 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,788 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,792 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,802 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:30:59,802 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:30:59,807 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,807 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:30:59,812 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:30:59,812 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:30:59,812 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:30:59,812 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:30:59,812 - DEBUG - Calling on_end with no data
+2024-06-02 13:30:59,832 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:09,856 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,882 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:09,890 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,915 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:31:09,920 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,930 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:31:09,944 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,966 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:31:09,966 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,974 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:09,982 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:09,990 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:31:09,990 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,000 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:31:10,005 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,024 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:31:10,024 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,046 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser6f5b70f6@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:31:10,061 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,073 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:10,073 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,092 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:10,093 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,101 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:10,105 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,117 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:31:10,120 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:31:10,124 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:31:10,125 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,125 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:31:10,127 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:31:10,127 - DEBUG - Calling on_end with no data
+2024-06-02 13:31:10,151 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,350 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,378 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,383 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,406 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:33:40,410 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,420 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:33:40,432 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,452 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:33:40,452 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,468 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,470 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,477 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:33:40,483 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,492 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:33:40,495 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,513 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:33:40,515 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,537 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser781cb337@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:33:40,555 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,565 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,570 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,584 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,585 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,592 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,596 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,604 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:33:40,604 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:33:40,612 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,612 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,616 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:33:40,616 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,616 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,617 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:33:40,617 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:33:40,617 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,617 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,617 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:33:40,618 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:33:40,618 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:33:40,621 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:33:40,621 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:33:40,621 - DEBUG - Calling on_end with no data
+2024-06-02 13:33:40,640 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:06,796 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,821 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:06,825 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,853 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:34:06,861 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,868 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:34:06,885 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,907 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:34:06,907 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,918 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:06,923 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,928 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:34:06,934 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,939 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:34:06,939 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,965 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:34:06,965 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:06,990 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser1d10c969@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:34:07,006 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:07,014 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:07,018 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:07,036 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:07,039 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:07,050 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:07,050 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:07,058 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:07,058 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:07,069 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,069 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:34:07,069 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:34:07,069 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,069 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,069 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:34:07,069 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,069 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:34:07,071 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:34:07,073 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:34:07,073 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,073 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:34:07,074 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,076 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:07,076 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:34:07,076 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:34:07,076 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:07,076 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:07,076 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:34:07,076 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:07,077 - DEBUG - Calling on_end with no data
+2024-06-02 13:34:07,091 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,622 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,655 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,663 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,691 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:34:54,695 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,708 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:34:54,724 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,749 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:34:54,750 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,756 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,756 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,767 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:34:54,774 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,781 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:34:54,786 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,808 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:34:54,810 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,828 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser8b2ec840@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:34:54,846 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,857 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,858 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,875 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,878 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,884 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,889 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,898 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:34:54,898 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:34:54,906 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,906 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:34:54,906 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:34:54,906 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,906 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:34:54,908 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,908 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:34:54,910 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:34:54,910 - DEBUG - Calling on_end with no data
+2024-06-02 13:34:54,931 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:39,817 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,844 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:39,860 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,893 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:38:39,901 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,910 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:38:39,923 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,940 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:38:39,944 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,954 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:39,958 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,963 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:38:39,963 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,974 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:38:39,981 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:39,999 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:38:39,999 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,018 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser686e49e0@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:38:40,027 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,044 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:40,049 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,062 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:40,062 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,078 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:40,083 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,095 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:38:40,101 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:38:40,103 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,103 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:38:40,103 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:38:40,103 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,103 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,103 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:38:40,104 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,104 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,104 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:38:40,104 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:38:40,104 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,104 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,104 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,105 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:38:40,108 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:38:40,108 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,108 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:38:40,108 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:38:40,108 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,108 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,109 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:38:40,109 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,109 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,109 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:38:40,109 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:38:40,109 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,109 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,109 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:38:40,110 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,110 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,110 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:38:40,110 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:38:40,110 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,110 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,110 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:38:40,110 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,110 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:38:40,111 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:38:40,111 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:38:40,111 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:38:40,111 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:38:40,111 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:38:40,111 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:38:40,111 - DEBUG - Calling on_end with no data
+2024-06-02 13:38:40,132 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:18,864 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,889 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:18,896 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,924 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:39:18,929 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,939 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:39:18,952 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,972 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:39:18,972 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,988 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:18,992 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:18,999 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:39:19,003 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,010 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:39:19,015 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,035 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:39:19,036 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,056 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser3eea54bb@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:39:19,072 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,084 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:19,087 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,099 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:19,103 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,112 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:19,117 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,127 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:39:19,132 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,132 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:39:19,135 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:39:19,135 - DEBUG - Calling on_end with no data
+2024-06-02 13:39:19,158 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,025 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,050 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,050 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,081 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:43:48,083 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,095 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:43:48,108 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,129 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:43:48,130 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,139 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,147 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,147 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:43:48,157 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,166 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:43:48,166 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,188 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:43:48,190 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,209 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser88d7e5cc@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:43:48,230 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,238 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,243 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,258 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,260 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,271 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,275 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,284 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:43:48,288 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:43:48,291 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,292 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:43:48,294 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,294 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:43:48,296 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:43:48,296 - DEBUG - Calling on_end with no data
+2024-06-02 13:43:48,319 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,434 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,457 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,464 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,488 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:44:10,493 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,498 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-02 13:44:10,516 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,536 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-02 13:44:10,538 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,547 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,551 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,559 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-02 13:44:10,560 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,570 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-02 13:44:10,573 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,591 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-02 13:44:10,592 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,613 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser47df9e55@example.com "HTTP/1.1 204 No Content"
+2024-06-02 13:44:10,628 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,639 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,642 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,660 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,660 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,670 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,673 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,684 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-02 13:44:10,687 - DEBUG - Using proactor: IocpProactor
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-02 13:44:10,687 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,687 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,694 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-02 13:44:10,694 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,694 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,694 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-02 13:44:10,694 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-02 13:44:10,694 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,694 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-02 13:44:10,695 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,695 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-02 13:44:10,698 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_part_begin with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-02 13:44:10,698 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-02 13:44:10,698 - DEBUG - Calling on_header_end with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_headers_finished with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-02 13:44:10,698 - DEBUG - Calling on_part_end with no data
+2024-06-02 13:44:10,698 - DEBUG - Calling on_end with no data
+2024-06-02 13:44:10,720 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-03 15:25:38,697 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-03 15:36:56,211 - INFO - Looking for manager with email: meet@nucleusteq.com
+2024-06-03 15:36:56,211 - INFO - Looking for employee with email: kevin@nucleusteq.com
+2024-06-03 15:37:05,017 - INFO - Looking for manager with email: meet@nucleusteq.com
+2024-06-03 15:37:05,017 - INFO - Looking for employee with email: dhairya@nucleusteq.com
+2024-06-03 15:51:35,177 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,177 - DEBUG - Calling on_header_field with data[42:61]
+2024-06-03 15:51:35,177 - DEBUG - Calling on_header_value with data[63:85]
+2024-06-03 15:51:35,177 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_data with data[89:99]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_field with data[143:162]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_value with data[164:193]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_data with data[197:200]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_field with data[244:263]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_value with data[265:293]
+2024-06-03 15:51:35,178 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_field with data[341:360]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_value with data[362:392]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_data with data[396:406]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_field with data[450:469]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_value with data[471:495]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_data with data[499:503]
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,179 - DEBUG - Calling on_header_field with data[547:566]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_value with data[568:590]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_data with data[594:604]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_field with data[648:667]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_value with data[669:694]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_data with data[698:702]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_field with data[746:765]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_value with data[767:791]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_data with data[795:802]
+2024-06-03 15:51:35,180 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,181 - DEBUG - Calling on_part_begin with no data
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_field with data[846:865]
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_value with data[867:968]
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_field with data[970:982]
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_value with data[984:994]
+2024-06-03 15:51:35,181 - DEBUG - Calling on_header_end with no data
+2024-06-03 15:51:35,181 - DEBUG - Calling on_headers_finished with no data
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[998:189668]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[189669:190217]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[190218:190766]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[190767:191315]
+2024-06-03 15:51:35,182 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-03 15:51:35,183 - DEBUG - Calling on_part_data with data[191316:226698]
+2024-06-03 15:51:35,183 - DEBUG - Calling on_part_end with no data
+2024-06-03 15:51:35,183 - DEBUG - Calling on_end with no data
+2024-06-03 16:00:10,659 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-03 22:23:42,178 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-03 22:23:52,297 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-03 22:26:47,793 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-04 07:54:30,057 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-04 07:54:43,260 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-04 08:01:08,812 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,829 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:08,838 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,862 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:01:08,868 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,874 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-04 08:01:08,883 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,903 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-04 08:01:08,903 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,916 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:08,918 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,925 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-04 08:01:08,928 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,933 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-04 08:01:08,936 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,946 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:01:08,953 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,970 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser34e207c9@example.com "HTTP/1.1 204 No Content"
+2024-06-04 08:01:08,984 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:08,989 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:08,997 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:09,008 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:09,010 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:09,017 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:09,022 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:09,028 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-04 08:01:09,031 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:01:09,034 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,034 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-04 08:01:09,036 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-04 08:01:09,036 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,037 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,037 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-04 08:01:09,037 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,037 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,037 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-04 08:01:09,037 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-04 08:01:09,037 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,037 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-04 08:01:09,038 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-04 08:01:09,039 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:01:09,039 - DEBUG - Calling on_end with no data
+2024-06-04 08:01:09,061 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:17,943 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:17,967 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:17,973 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:17,995 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:05:18,004 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,007 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-04 08:05:18,021 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,036 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-04 08:05:18,036 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,048 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:18,050 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,054 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-04 08:05:18,059 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,063 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-04 08:05:18,068 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,084 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:05:18,085 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,102 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserf8b8bd2d@example.com "HTTP/1.1 204 No Content"
+2024-06-04 08:05:18,117 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,118 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:18,127 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,141 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:18,143 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,150 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:18,154 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,159 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-04 08:05:18,159 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-04 08:05:18,168 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,168 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-04 08:05:18,170 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:05:18,170 - DEBUG - Calling on_end with no data
+2024-06-04 08:05:18,191 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,403 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,413 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,423 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,446 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:12:24,450 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,458 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-04 08:12:24,467 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,486 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-04 08:12:24,486 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,490 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,498 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,505 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-04 08:12:24,505 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,515 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-04 08:12:24,517 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,532 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-04 08:12:24,534 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,553 - INFO - HTTP Request: DELETE http://testserver/users/deleteuserc22e4399@example.com "HTTP/1.1 204 No Content"
+2024-06-04 08:12:24,567 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,575 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,576 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,592 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,594 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,603 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,607 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,615 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-04 08:12:24,617 - DEBUG - Using proactor: IocpProactor
+2024-06-04 08:12:24,617 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,622 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-04 08:12:24,622 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-04 08:12:24,624 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,624 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-04 08:12:24,626 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,626 - DEBUG - Calling on_part_begin with no data
+2024-06-04 08:12:24,626 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-04 08:12:24,626 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-04 08:12:24,626 - DEBUG - Calling on_header_end with no data
+2024-06-04 08:12:24,626 - DEBUG - Calling on_headers_finished with no data
+2024-06-04 08:12:24,626 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-04 08:12:24,626 - DEBUG - Calling on_part_end with no data
+2024-06-04 08:12:24,626 - DEBUG - Calling on_end with no data
+2024-06-04 08:12:24,646 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-05 01:49:01,367 - INFO - Deleting user with email: eastern@nucleusteq.com
+2024-06-05 01:51:51,420 - INFO - Fetching all users
+2024-06-05 01:52:06,467 - INFO - Fetching all users
+2024-06-05 01:52:19,867 - INFO - Fetching claim requests for employee with id: 108
+2024-06-05 01:52:19,888 - INFO - Fetching claim requests for employee with id: 110
+2024-06-05 01:52:19,888 - INFO - Fetching claim requests for employee with id: 112
+2024-06-05 01:52:19,888 - INFO - Fetching claim requests for employee with id: 113
+2024-06-05 01:52:19,888 - INFO - Fetching claim requests for employee with id: 114
+2024-06-05 01:52:19,892 - INFO - Fetching claim requests for employee with id: 117
+2024-06-05 01:52:19,910 - INFO - Fetching claim requests for employee with id: 118
+2024-06-05 01:52:19,922 - INFO - Fetching claim requests for employee with id: 119
+2024-06-05 01:52:19,962 - INFO - Fetching claim requests for employee with id: 106
+2024-06-05 01:52:19,965 - INFO - Fetching claim requests for employee with id: 107
+2024-06-05 01:52:20,116 - INFO - Fetching claim requests for employee with id: 106
+2024-06-05 01:52:20,133 - INFO - Fetching claim requests for employee with id: 108
+2024-06-05 01:52:20,133 - INFO - Fetching claim requests for employee with id: 107
+2024-06-05 01:52:20,153 - INFO - Fetching claim requests for employee with id: 110
+2024-06-05 01:52:20,153 - INFO - Fetching claim requests for employee with id: 113
+2024-06-05 01:52:20,157 - INFO - Fetching claim requests for employee with id: 114
+2024-06-05 01:52:20,157 - INFO - Fetching claim requests for employee with id: 112
+2024-06-05 01:52:20,178 - INFO - Fetching claim requests for employee with id: 117
+2024-06-05 01:52:20,187 - INFO - Fetching claim requests for employee with id: 118
+2024-06-05 01:52:20,201 - INFO - Fetching claim requests for employee with id: 119
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 106
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 107
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 113
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 112
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 108
+2024-06-05 01:52:47,036 - INFO - Fetching claim requests for employee with id: 110
+2024-06-05 01:52:47,105 - INFO - Fetching claim requests for employee with id: 114
+2024-06-05 01:52:47,153 - INFO - Fetching claim requests for employee with id: 117
+2024-06-05 01:52:47,164 - INFO - Fetching claim requests for employee with id: 118
+2024-06-05 01:52:47,164 - INFO - Fetching claim requests for employee with id: 119

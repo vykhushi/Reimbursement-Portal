@@ -71,15 +71,7 @@
                     </form>
                 </div>
                 <div class="form-container">
-                    <!-- <h2>Delete Department</h2> -->
-                    <!-- <form id="deletedeptForm">
-                <div class="form-group">
-                    <label for="deptId">Department Id</label>
-                    <input type="text" id="deptId" name="deptId" required>
-                </div>
-                
-                <button type="submit" style="background-color: red;">Delete</button>
-            </form> -->
+                   
                 </div>
             </div>
         </div>
@@ -135,7 +127,57 @@
                     alert('Error adding department: ' + error.message);
                 }
             });
+            // Load department data
+            loadDepartmentData();
         });
+
+
+
+
+        async function loadDepartmentData() {
+            try {
+                const response = await fetch('http://localhost:8000/departments/');
+                const data = await response.json();
+
+                // Sort departments by ID in ascending order
+                data.sort((a, b) => a.id - b.id);
+
+                const tableBody = document.getElementById('department-table-body');
+                tableBody.innerHTML = ''; // Clear existing data
+
+                data.forEach(department => {
+                    const row = document.createElement('tr');
+
+                    const idCell = document.createElement('td');
+                    idCell.textContent = department.id;
+
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = department.dept_name;
+
+                    const actionCell = document.createElement('td');
+                    actionCell.innerHTML = `
+                        <button class="delete-department">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    `;
+
+                    // Add event listener to the button
+                    const deleteButton = actionCell.querySelector('.delete-department');
+                    deleteButton.addEventListener('click', function () {
+                        const departmentId = row.querySelector('td').textContent;
+                        deleteDepartmentById(departmentId);
+                    });
+
+                    row.appendChild(idCell);
+                    row.appendChild(nameCell);
+                    row.appendChild(actionCell);
+
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching department data:', error);
+            }
+        }
 
 
 

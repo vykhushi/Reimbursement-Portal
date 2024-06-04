@@ -90,6 +90,7 @@ def create_user(user: CreateUser, db: Session = Depends(get_db)):
 #API endpoint to delete user using email
 @app.delete("/users/{user_email}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_user(user_email: str, db: Session = Depends(get_db)):
+    logging.info(f"Deleting user with email: {user_email}")
     user = db.query(DBUser).filter(DBUser.email== user_email).first()
     
     if user is None:
@@ -195,6 +196,7 @@ def get_employees_managed_by_manager(manager_email: str, db: Session = Depends(g
 #API endpoint to find employees
 @app.get("/employees/", response_model=None)
 def read_employee_users(db: Session = Depends(get_db)):
+    logging.info("Fetching all employees")
     employees = db.query(DBUser).filter(DBUser.role == 'employee').all()
     return employees
 
@@ -203,6 +205,7 @@ def read_employee_users(db: Session = Depends(get_db)):
 #API endpoint to find managers
 @app.get("/managers/", response_model=None)
 def read_manager_users(db: Session = Depends(get_db)):
+    logging.info("Fetching all managers")
     managers = db.query(DBUser).filter(DBUser.role == 'manager').all()
     return managers
 
@@ -222,7 +225,7 @@ async def submit_form(
     Status:str=Form(...),
     Employee_id:int=Form(...)
 ):
-  
+   logging.info("Submitting a new claim form")
    form_data = await request.form()
 
     # Convert the form data to a dictionary for easy inspection
@@ -271,6 +274,7 @@ async def submit_form(
         return db_form_data
     
    except Exception as e:
+            logging.error(f"Failed to submit form: {e}")
             raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(e))
    
 
@@ -278,6 +282,7 @@ async def submit_form(
 #API endpointto to get the data from the claim from in records table  
 @app.get("/table/", response_model=None)
 def get_data(db: Session = Depends(get_db)):
+    logging.info("Fetching all form data")
     # Use the provided database session (`db`) to query FormDat
 
     form_data_list=db.query(FormData).all()
@@ -289,6 +294,7 @@ def get_data(db: Session = Depends(get_db)):
 #API endpoint to get  claim request of a particular employee
 @app.get("/get_claim_request/{id}", response_model=None)
 def read_users(id:int,db: Session = Depends(get_db)):
+    logging.info(f"Fetching claim requests for employee with id: {id}")
     claims = db.query(FormData).filter(FormData.Employee_id==id).all()
     return claims
 
@@ -305,7 +311,8 @@ async def update_form(
     Comment: Optional[str] = Query(None),
     Status: Optional[str] = Query(None),
     db: Session = Depends(get_db)
-):
+):   
+    logging.info(f"Updating form with id: {form_id}")
     form = db.query(FormData).filter(FormData.id == form_id).first()
     if not form:
         raise HTTPException(status_code=404, detail="Form not found")
@@ -334,7 +341,7 @@ async def update_form(
 #API endpoint to get all registered user
 @app.get("/users/", response_model=None)
 def read_users(db: Session = Depends(get_db)):
-    
+    logging.info("Fetching all users")
     users = db.query(DBUser).all()
     for i in range(len(users)):
         return users
@@ -342,21 +349,23 @@ def read_users(db: Session = Depends(get_db)):
 
 #API endpoint to get user by email 
 @app.get("/get_user/{email}", response_model=None)
-def read_users(email:str,db: Session = Depends(get_db)): 
+def read_users(email:str,db: Session = Depends(get_db)):
+    logging.info(f"Fetching user with email: {email}") 
     user = db.query(DBUser).filter(DBUser.email==email).first()
     return user
 
 
-#API endpoint to get subordinates
-@app.get("/get_subordinates/{id}", response_model=None)
-def read_users(id:int,db: Session = Depends(get_db)):
-    subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
-    return subordinates
+# #API endpoint to get subordinates
+# @app.get("/get_subordinates/{id}", response_model=None)
+# def read_users(id:int,db: Session = Depends(get_db)):
+#     subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
+#     return subordinates
    
 
 #API endpoint to create department(add dept)
 @app.post("/departments/", response_model=AddDepartment)
 def create_department(dept: AddDepartment, db: Session = Depends(get_db)):
+    logging.info(f"Creating department with name: {dept.dept_name}")
     db_dept = Dept(dept_name=dept.dept_name)
     db.add(db_dept)
     db.commit()
@@ -367,6 +376,7 @@ def create_department(dept: AddDepartment, db: Session = Depends(get_db)):
 #API endpoint to get all the dept 
 @app.get("/departments/", response_model=None)
 def read_dept(db: Session = Depends(get_db)):
+    logging.info("Fetching all departments")
     departments= db.query(Dept).all()
     return departments
 
@@ -374,6 +384,7 @@ def read_dept(db: Session = Depends(get_db)):
 #API endpoint to delete the dept 
 @app.delete("/departments/{department_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_department(department_id: int, db: Session = Depends(get_db)):
+    logging.info(f"Deleting department with id: {department_id}")
     department = db.query(Dept).filter(Dept.id == department_id).first()
     
     if department is None:

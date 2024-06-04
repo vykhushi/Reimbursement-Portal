@@ -1,40 +1,40 @@
-
-.container{
+.container {
   display: flex;
   width: 100%;
 }
 
-.left-menu{
-    width: 250px;
-    background-color:  #050a30;
-    padding: 20px;
-    height: 100vh;
-  }
-  .left-menu h2{
-    margin-bottom: 15px;
-    color: #fff;
-    
-  } 
-  .left-menu ul li{
-    list-style-type: none;
-    height: 50px;
-    color: white;
-    
-    
-  }
-  
-  .left-menu ul li a {
-   
-    padding: 10px 15px;
-    text-decoration: none;
-   
-    color:#eee;
-    font-family: var(--font1);
-  } 
-  .left-menu ul li a:hover {
-    /* background-color: #ddd; */
-   }
-   
-   .main-content{
-    flex: 1;
-   }
+.left-menu {
+  width: 250px;
+  background-color: #050a30;
+  padding: 20px;
+   height: 100vh;
+}
+
+.left-menu h2 {
+  margin-bottom: 15px;
+  color: #fff;
+
+}
+
+.left-menu ul li {
+  list-style-type: none;
+  height: 50px;
+  color: white;
+
+
+}
+
+.left-menu ul li a {
+
+  padding: 10px 15px;
+  text-decoration: none;
+
+  color: #eee;
+  font-family: var(--font1);
+}
+
+.left-menu ul li a:hover {}
+
+.main-content {
+  flex: 1;
+}
