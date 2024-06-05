@@ -71,7 +71,7 @@
                     </form>
                 </div>
                 <div class="form-container">
-                   
+
                 </div>
             </div>
         </div>
@@ -237,9 +237,9 @@
                         const actionCell = document.createElement('td');
 
                         actionCell.innerHTML = `
-        <button class="delete-department">
-            <i class="fas fa-trash-alt"></i>
-        </button>
+                                               <button class="delete-department">
+                                               <i class="fas fa-trash-alt"></i>
+                                               </button>
     `;
 
                         // Add event listener to the button
@@ -252,11 +252,7 @@
                             deleteDepartmentById(departmentId);
                         });
 
-                        // Function to handle deletion
-                        // function deleteDaprtmentById(departmentId) {
-                        //     // Add your logic to handle deletion here
-                        //     console.log('Deleting department with ID:', departmentId);
-                        // }
+                        
 
                         row.appendChild(idCell);
                         row.appendChild(nameCell);
@@ -280,11 +276,7 @@
         const userDetail = document.getElementById("userDetail");
         userDetail.innerHTML = username;
         console.log(email, userDetail);
-
-
-
     </script>
-
 
 </body>
 

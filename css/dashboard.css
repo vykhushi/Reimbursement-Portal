@@ -1,6 +1,5 @@
-
-
-html, body {
+html,
+body {
   overflow-x: hidden;
   height: 100%;
   margin: 0;
@@ -12,177 +11,102 @@ body .container {
   padding: 0; */
 }
 
-.navbar {   
+.navbar {
   display: flex;
-    justify-content: space-between;
-    background-color: #eee;
-    color: #000c66;
-    padding: 30px;
-    font-size: 24px;
-    font-weight: bold;
-   
-  
-}
-.right-navbar{
-  display:flex;
-  padding:30px;
+  justify-content: space-between;
+  background-color: #eee;
+  color: #000c66;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: bold;
+
 
 }
+
+.right-navbar {
+  display: flex;
+  padding: 30px;
+
+}
+
 .navbar-logout button {
-  /* Style the button */
   padding: 8px 12px;
   background-color: #000c66;
   border: none;
   border-radius: 4px;
-  
-
 }
+
 .navbar-logout button a {
-  /* Style the link inside the button */
   color: white;
   text-decoration: none;
 }
 
-
 body.container {
-  display: flex; /* Use flexbox for layout */
+  display: flex;
   height: 100%;
-  max-width:100%;
+  max-width: 100%;
 }
 
-.left-menu{
+.left-menu {
   width: 250px;
-  background-color:  #050a30;
+  background-color: #050a30;
   padding: 20px;
 }
-.left-menu h2{
+
+.left-menu h2 {
   margin-bottom: 15px;
   color: #fff;
-  
+
 }
-.left-menu ul li{
+
+.left-menu ul li {
   list-style-type: none;
   height: 50px;
   color: white;
-  
-  
+
+
 }
 
-.nav-list-item{
+.nav-list-item {
   display: flex;
 
 }
+
 .left-menu ul li a {
- 
+
   padding: 10px 15px;
   text-decoration: none;
- 
-  color:#eee;
+
+  color: #eee;
   font-family: var(--font1);
-} 
-.left-menu ul li a:hover {
-  /* background-color: #ddd; */
 }
 
-.left-menu  img {
-  width: 40px; 
-  position:relative;
-  
-  
+.left-menu ul li a:hover {}
+
+.left-menu img {
+  width: 40px;
+  position: relative;
+
+
 }
 
-.UserDashboard{
-   flex: 1; /*Occupy remaining space */
-   padding: 20px;
+.UserDashboard {
+  flex: 1;
+  padding: 20px;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .dashboard-items {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  
+
 }
-/* .dashboard-item {
-  flex: 1;s
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: var(--font2);
 
-} */
-
-/* .dashboard-items-submitted-request{
-  /* background-color:  #86b2c6; */
-  /* display: flex;
-   flex-direction: column;
-  justify-content: center; 
-   align-items: center; 
-  color: #333;
-  border: 2px solid #161617; 
-  border-radius: 4px; 
-  margin-top: 20px; 
-  width: 200px;
-  padding: inherit;
-   */
-
-/* } */
-
-/* .dashboard-item-status {
-  /* background-color:   #86b2c6; */
-  /* padding: inherit;
-  display: flex;
-   flex-direction: column;
-  justify-content: center; 
-   align-items: center; 
-  color: #333;
-  border: 2px solid #101011; 
-   border-radius: 4px; 
-   margin-top: 20px; 
-   width: 200px;
- 
-} */ 
-
-
-/* .dashboard-item-history {
-   /* background-color: #86b2c6;  */
-   /* padding: inherit;
-  display: flex;
-  flex-direction: column; 
-   justify-content: center;
-   align-items: center; 
-  color: #333;
-  border: 2px solid #0e0f10; 
-  border-radius: 4px; 
-   margin-top: 20px; 
-  width: 200px;  */
-/* }  */
-
-
-/* .dashboard-items-submitted-request img,
-.dashboard-item-status img,
-.dashboard-item-history img {
-  max-width: 50%; 
-  max-height: 50%; 
-  display: block; 
-  margin: auto; 
-} */
 .footer {
   background-color: #eee;
   color: #000c66;
   text-align: center;
   padding: 10px 0;
 }
-
-/* .card-header {
-  background-color: #f8f9fa;
-}
-
-.card-title i {
-  margin-right: 10px;
-}
-
-.card-body .btn {
-  margin: 5px;
-} */
-
