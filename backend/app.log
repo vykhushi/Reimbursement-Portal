@@ -11857,3 +11857,441 @@
 2024-06-05 22:25:45,726 - INFO - Fetching all departments
 2024-06-05 22:26:59,681 - INFO - Fetching all departments
 2024-06-05 22:27:18,272 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 22:47:07,028 - INFO - Fetching all departments
+2024-06-05 22:51:54,611 - INFO - Fetching all departments
+2024-06-05 22:52:04,284 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:01:31,233 - INFO - Fetching all departments
+2024-06-05 23:01:39,931 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:07:27,993 - INFO - Fetching all departments
+2024-06-05 23:07:36,716 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:07:46,151 - INFO - Fetching all departments
+2024-06-05 23:07:55,809 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:11:35,738 - INFO - Fetching all departments
+2024-06-05 23:11:47,008 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:16:45,648 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:16:50,040 - INFO - Fetching all departments
+2024-06-05 23:16:58,399 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:17:05,346 - INFO - Fetching all departments
+2024-06-05 23:19:41,165 - INFO - Fetching all departments
+2024-06-05 23:20:30,728 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:20:41,773 - INFO - Fetching all departments
+2024-06-05 23:20:49,728 - INFO - Fetching user with email: kevin@nucleusteq.com
+2024-06-05 23:21:14,051 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-05 23:21:21,497 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-05 23:21:32,971 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:21:54,031 - INFO - Fetching all departments
+2024-06-05 23:22:01,138 - INFO - Fetching all departments
+2024-06-05 23:22:34,379 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:23:02,079 - INFO - Fetching all departments
+2024-06-05 23:23:16,839 - INFO - Fetching all departments
+2024-06-05 23:23:24,975 - INFO - Fetching all departments
+2024-06-05 23:23:35,385 - INFO - Fetching all departments
+2024-06-05 23:24:08,227 - INFO - Fetching all departments
+2024-06-05 23:24:48,995 - INFO - Fetching all departments
+2024-06-05 23:25:00,561 - INFO - Fetching all employees
+2024-06-05 23:25:00,578 - INFO - Fetching all managers
+2024-06-05 23:26:29,836 - INFO - Fetching all departments
+2024-06-05 23:26:31,123 - INFO - Fetching all departments
+2024-06-05 23:26:31,579 - INFO - Fetching all departments
+2024-06-05 23:26:31,959 - INFO - Fetching all departments
+2024-06-05 23:26:32,263 - INFO - Fetching all departments
+2024-06-05 23:26:32,669 - INFO - Fetching all departments
+2024-06-05 23:26:33,090 - INFO - Fetching all departments
+2024-06-05 23:26:33,472 - INFO - Fetching all departments
+2024-06-05 23:26:33,912 - INFO - Fetching all departments
+2024-06-05 23:26:34,293 - INFO - Fetching all departments
+2024-06-05 23:26:34,710 - INFO - Fetching all departments
+2024-06-05 23:26:35,113 - INFO - Fetching all departments
+2024-06-05 23:26:35,503 - INFO - Fetching all departments
+2024-06-05 23:26:35,928 - INFO - Fetching all departments
+2024-06-05 23:26:36,290 - INFO - Fetching all departments
+2024-06-05 23:26:36,771 - INFO - Fetching all departments
+2024-06-05 23:26:37,146 - INFO - Fetching all departments
+2024-06-05 23:26:37,521 - INFO - Fetching all departments
+2024-06-05 23:26:37,896 - INFO - Fetching all departments
+2024-06-05 23:26:38,311 - INFO - Fetching all departments
+2024-06-05 23:26:38,737 - INFO - Fetching all departments
+2024-06-05 23:26:39,111 - INFO - Fetching all departments
+2024-06-05 23:26:39,524 - INFO - Fetching all departments
+2024-06-05 23:26:39,921 - INFO - Fetching all departments
+2024-06-05 23:26:40,322 - INFO - Fetching all departments
+2024-06-05 23:29:21,230 - INFO - Fetching all departments
+2024-06-05 23:29:21,305 - INFO - Fetching all departments
+2024-06-05 23:30:44,073 - INFO - Fetching all departments
+2024-06-05 23:30:44,090 - INFO - Fetching all departments
+2024-06-05 23:30:44,111 - ERROR - Failed to retrieve employees managed by manager: 404: Manager not found
+2024-06-05 23:30:44,163 - INFO - Fetching all departments
+2024-06-05 23:31:08,353 - ERROR - Failed to retrieve employees managed by manager: 404: Manager not found
+2024-06-05 23:31:08,389 - INFO - Fetching all departments
+2024-06-05 23:31:26,786 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:31:31,959 - INFO - Fetching all managers
+2024-06-05 23:31:59,809 - INFO - Fetching all departments
+2024-06-05 23:32:13,798 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-05 23:32:40,958 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-05 23:33:06,307 - INFO - Fetching user with email: kevin@nucleusteq.com
+2024-06-05 23:37:41,147 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,161 - INFO - Creating department with name: ABC8bf5cb09
+2024-06-05 23:37:41,200 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,212 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,268 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-05 23:37:41,281 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,297 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2024-06-05 23:37:41,320 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,332 - INFO - Deleting department with id: 2
+2024-06-05 23:37:41,361 - INFO - HTTP Request: DELETE http://testserver/departments/2 "HTTP/1.1 204 No Content"
+2024-06-05 23:37:41,364 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,372 - INFO - Fetching all departments
+2024-06-05 23:37:41,383 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,394 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,402 - INFO - Deleting user with email: nonexistentuser@example.com
+2024-06-05 23:37:41,412 - INFO - HTTP Request: DELETE http://testserver/users/nonexistentuser@example.com "HTTP/1.1 404 Not Found"
+2024-06-05 23:37:41,419 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,428 - INFO - Deleting department with id: 999
+2024-06-05 23:37:41,438 - INFO - HTTP Request: DELETE http://testserver/departments/999 "HTTP/1.1 404 Not Found"
+2024-06-05 23:37:41,450 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,492 - INFO - HTTP Request: POST http://testserver/users/ "HTTP/1.1 201 Created"
+2024-06-05 23:37:41,496 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,506 - INFO - Deleting user with email: deleteuser37b43cba@example.com
+2024-06-05 23:37:41,541 - INFO - HTTP Request: DELETE http://testserver/users/deleteuser37b43cba@example.com "HTTP/1.1 204 No Content"
+2024-06-05 23:37:41,577 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,587 - INFO - Fetching all form data
+2024-06-05 23:37:41,599 - INFO - HTTP Request: GET http://testserver/table/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,609 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,619 - INFO - Creating department with name: ABCf3eee721
+2024-06-05 23:37:41,642 - INFO - HTTP Request: POST http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,645 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,658 - INFO - Fetching all departments
+2024-06-05 23:37:41,669 - INFO - HTTP Request: GET http://testserver/departments/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,677 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,684 - INFO - Fetching all users
+2024-06-05 23:37:41,700 - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 200 OK"
+2024-06-05 23:37:41,713 - DEBUG - Using proactor: IocpProactor
+2024-06-05 23:37:41,718 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,719 - DEBUG - Calling on_header_field with data[36:55]
+2024-06-05 23:37:41,719 - DEBUG - Calling on_header_value with data[57:79]
+2024-06-05 23:37:41,719 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,720 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,720 - DEBUG - Calling on_part_data with data[83:92]
+2024-06-05 23:37:41,721 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,721 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,721 - DEBUG - Calling on_header_field with data[130:149]
+2024-06-05 23:37:41,721 - DEBUG - Calling on_header_value with data[151:181]
+2024-06-05 23:37:41,722 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,722 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,722 - DEBUG - Calling on_part_data with data[185:191]
+2024-06-05 23:37:41,723 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,723 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,723 - DEBUG - Calling on_header_field with data[229:248]
+2024-06-05 23:37:41,724 - DEBUG - Calling on_header_value with data[250:274]
+2024-06-05 23:37:41,724 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,724 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,724 - DEBUG - Calling on_part_data with data[278:281]
+2024-06-05 23:37:41,724 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,724 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,726 - DEBUG - Calling on_header_field with data[319:338]
+2024-06-05 23:37:41,726 - DEBUG - Calling on_header_value with data[340:362]
+2024-06-05 23:37:41,726 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,726 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,727 - DEBUG - Calling on_part_data with data[366:376]
+2024-06-05 23:37:41,727 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,727 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,728 - DEBUG - Calling on_header_field with data[414:433]
+2024-06-05 23:37:41,728 - DEBUG - Calling on_header_value with data[435:478]
+2024-06-05 23:37:41,728 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,728 - DEBUG - Calling on_header_field with data[480:492]
+2024-06-05 23:37:41,729 - DEBUG - Calling on_header_value with data[494:504]
+2024-06-05 23:37:41,729 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,729 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,730 - DEBUG - Calling on_part_data with data[508:520]
+2024-06-05 23:37:41,730 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,730 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,731 - DEBUG - Calling on_header_field with data[558:577]
+2024-06-05 23:37:41,731 - DEBUG - Calling on_header_value with data[579:604]
+2024-06-05 23:37:41,731 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,731 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,732 - DEBUG - Calling on_part_data with data[608:620]
+2024-06-05 23:37:41,732 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,733 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,734 - DEBUG - Calling on_header_field with data[658:677]
+2024-06-05 23:37:41,735 - DEBUG - Calling on_header_value with data[679:703]
+2024-06-05 23:37:41,735 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,735 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,735 - DEBUG - Calling on_part_data with data[707:714]
+2024-06-05 23:37:41,736 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,736 - DEBUG - Calling on_part_begin with no data
+2024-06-05 23:37:41,737 - DEBUG - Calling on_header_field with data[752:771]
+2024-06-05 23:37:41,737 - DEBUG - Calling on_header_value with data[773:802]
+2024-06-05 23:37:41,737 - DEBUG - Calling on_header_end with no data
+2024-06-05 23:37:41,738 - DEBUG - Calling on_headers_finished with no data
+2024-06-05 23:37:41,738 - DEBUG - Calling on_part_data with data[806:807]
+2024-06-05 23:37:41,738 - DEBUG - Calling on_part_end with no data
+2024-06-05 23:37:41,740 - DEBUG - Calling on_end with no data
+2024-06-05 23:37:41,742 - INFO - Submitting a new claim form
+2024-06-05 23:37:41,782 - INFO - HTTP Request: POST http://testserver/forms/ "HTTP/1.1 200 OK"
+2024-06-06 11:50:52,388 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 11:51:02,485 - INFO - Fetching all departments
+2024-06-06 11:51:22,631 - INFO - Fetching all departments
+2024-06-06 11:51:31,110 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-06 11:51:42,348 - ERROR - Failed to retrieve employees managed by manager: 404: Manager not found
+2024-06-06 11:51:42,375 - INFO - Fetching all departments
+2024-06-06 11:52:03,370 - INFO - Fetching all departments
+2024-06-06 11:52:07,863 - INFO - Fetching all departments
+2024-06-06 11:52:19,544 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 11:52:22,891 - INFO - Fetching all departments
+2024-06-06 11:52:37,903 - INFO - Fetching user with email: dhairya@nucleusteq.com
+2024-06-06 11:52:41,615 - INFO - Fetching all departments
+2024-06-06 11:52:50,751 - INFO - Fetching all departments
+2024-06-06 11:53:10,070 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-06 11:54:43,018 - ERROR - Failed to authenticate user: 401: Invalid credentials
+2024-06-06 11:54:54,049 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 11:55:06,535 - INFO - Fetching all users
+2024-06-06 11:56:36,251 - INFO - Deleting user with email: tree@nucleusteq.c
+2024-06-06 11:58:56,115 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 11:58:56,119 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 11:58:56,119 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 11:58:56,119 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 11:58:56,120 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 11:58:56,121 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 11:58:56,128 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 11:58:56,146 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 11:58:56,151 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 11:58:56,152 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 11:58:56,231 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 11:58:56,237 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 11:58:56,237 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 11:58:56,237 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 11:58:56,238 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 11:58:56,238 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 11:58:56,254 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 11:58:56,257 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 11:58:56,259 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 11:58:56,260 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 11:59:07,022 - INFO - Fetching all departments
+2024-06-06 12:01:25,041 - INFO - Fetching all departments
+2024-06-06 12:01:38,272 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-06 12:01:50,631 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:01:55,945 - INFO - Fetching claim requests for employee with id: 121
+2024-06-06 12:01:55,951 - INFO - Fetching claim requests for employee with id: 120
+2024-06-06 12:01:56,014 - INFO - Fetching claim requests for employee with id: 121
+2024-06-06 12:01:56,015 - INFO - Fetching claim requests for employee with id: 120
+2024-06-06 12:02:02,761 - INFO - Fetching all departments
+2024-06-06 12:02:12,676 - INFO - Fetching all departments
+2024-06-06 12:02:14,640 - INFO - Fetching all departments
+2024-06-06 12:02:15,567 - INFO - Fetching all departments
+2024-06-06 12:02:27,778 - INFO - Fetching all departments
+2024-06-06 12:02:28,114 - INFO - Fetching all departments
+2024-06-06 12:02:28,502 - INFO - Fetching all departments
+2024-06-06 12:02:28,901 - INFO - Fetching all departments
+2024-06-06 12:02:29,309 - INFO - Fetching all departments
+2024-06-06 12:02:29,730 - INFO - Fetching all departments
+2024-06-06 12:02:30,113 - INFO - Fetching all departments
+2024-06-06 12:02:30,514 - INFO - Fetching all departments
+2024-06-06 12:02:30,931 - INFO - Fetching all departments
+2024-06-06 12:02:31,334 - INFO - Fetching all departments
+2024-06-06 12:02:31,770 - INFO - Fetching all departments
+2024-06-06 12:02:32,127 - INFO - Fetching all departments
+2024-06-06 12:02:32,526 - INFO - Fetching all departments
+2024-06-06 12:02:32,949 - INFO - Fetching all departments
+2024-06-06 12:04:40,784 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 12:04:40,857 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 12:04:47,495 - INFO - Fetching all users
+2024-06-06 12:04:50,282 - INFO - Fetching all departments
+2024-06-06 12:04:50,300 - INFO - Fetching all departments
+2024-06-06 12:04:53,316 - INFO - Fetching all employees
+2024-06-06 12:04:53,330 - INFO - Fetching all managers
+2024-06-06 12:05:05,886 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:05:05,891 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:05:05,891 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:05:05,893 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:05:05,894 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:05:05,896 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:05:05,907 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:05:05,908 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:05:05,921 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:05:05,923 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:05:05,963 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:05:05,969 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:05:05,969 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:05:05,969 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:05:05,969 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:05:05,969 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:05:05,987 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:05:05,992 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:05:05,993 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:05:05,995 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:05:11,384 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:05:11,386 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:05:11,388 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:05:11,388 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:05:11,389 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:05:11,390 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:05:11,398 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:05:11,399 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:05:11,408 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:05:11,408 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:05:11,924 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:05:11,924 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:05:11,925 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:05:11,925 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:05:11,927 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:05:11,928 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:05:11,938 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:05:11,942 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:05:11,946 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:05:11,947 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:05:16,163 - INFO - Fetching all users
+2024-06-06 12:05:18,546 - INFO - Fetching all departments
+2024-06-06 12:05:18,562 - INFO - Fetching all departments
+2024-06-06 12:05:22,810 - INFO - Fetching all employees
+2024-06-06 12:05:22,828 - INFO - Fetching all managers
+2024-06-06 12:05:28,981 - INFO - Fetching all departments
+2024-06-06 12:05:49,154 - INFO - Fetching user with email: meet@nucleusteq.com
+2024-06-06 12:05:55,702 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:05:59,709 - INFO - Fetching claim requests for employee with id: 120
+2024-06-06 12:05:59,710 - INFO - Fetching claim requests for employee with id: 121
+2024-06-06 12:05:59,797 - INFO - Fetching claim requests for employee with id: 121
+2024-06-06 12:05:59,797 - INFO - Fetching claim requests for employee with id: 120
+2024-06-06 12:06:10,147 - INFO - Fetching claim requests for employee with id: 120
+2024-06-06 12:06:10,150 - INFO - Fetching claim requests for employee with id: 121
+2024-06-06 12:10:43,331 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:11:25,940 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:11:29,232 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:16,694 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:18,928 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:24,379 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:26,536 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:31,003 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:35,395 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:37,675 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:39,772 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:42,190 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:44,258 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:13:46,360 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:15:00,731 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,731 - DEBUG - Calling on_header_field with data[42:61]
+2024-06-06 12:15:00,731 - DEBUG - Calling on_header_value with data[63:85]
+2024-06-06 12:15:00,731 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,731 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,731 - DEBUG - Calling on_part_data with data[89:98]
+2024-06-06 12:15:00,731 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,731 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_field with data[142:161]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_value with data[163:192]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_data with data[196:199]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_field with data[243:262]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_value with data[264:292]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_field with data[340:359]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_value with data[361:391]
+2024-06-06 12:15:00,732 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,732 - DEBUG - Calling on_part_data with data[395:405]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_field with data[449:468]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_value with data[470:494]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_data with data[498:503]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_field with data[547:566]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_value with data[568:590]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_data with data[594:604]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_field with data[648:667]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_value with data[669:694]
+2024-06-06 12:15:00,733 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,733 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_data with data[698:702]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_field with data[746:765]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_value with data[767:791]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_data with data[795:802]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_begin with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_field with data[846:865]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_value with data[867:902]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_field with data[904:916]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_value with data[918:942]
+2024-06-06 12:15:00,734 - DEBUG - Calling on_header_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_headers_finished with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_part_end with no data
+2024-06-06 12:15:00,734 - DEBUG - Calling on_end with no data
+2024-06-06 12:15:00,735 - INFO - Submitting a new claim form
+2024-06-06 12:15:11,949 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:15:19,206 - INFO - Fetching all departments
+2024-06-06 12:15:27,195 - INFO - Fetching user with email: khushiv@nucleusteq.com
+2024-06-06 12:15:30,773 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:15:30,774 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:15:30,779 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:15:30,780 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:15:30,781 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:15:30,781 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:15:30,794 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:15:30,799 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:15:30,803 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:15:30,803 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:15:30,865 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:15:30,865 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:15:30,865 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:15:30,866 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:15:30,866 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:15:30,866 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:15:30,888 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:15:30,888 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:15:30,888 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:15:30,889 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:15:51,578 - INFO - Updating form with id: 65
+2024-06-06 12:15:53,166 - INFO - Fetching claim requests for employee with id: 106
+2024-06-06 12:15:53,167 - INFO - Fetching claim requests for employee with id: 107
+2024-06-06 12:15:53,169 - INFO - Fetching claim requests for employee with id: 112
+2024-06-06 12:15:53,169 - INFO - Fetching claim requests for employee with id: 113
+2024-06-06 12:15:53,169 - INFO - Fetching claim requests for employee with id: 110
+2024-06-06 12:15:53,170 - INFO - Fetching claim requests for employee with id: 108
+2024-06-06 12:15:53,189 - INFO - Fetching claim requests for employee with id: 114
+2024-06-06 12:15:53,189 - INFO - Fetching claim requests for employee with id: 117
+2024-06-06 12:15:53,189 - INFO - Fetching claim requests for employee with id: 118
+2024-06-06 12:15:53,189 - INFO - Fetching claim requests for employee with id: 119
+2024-06-06 12:16:13,172 - INFO - Fetching all departments
+2024-06-06 12:16:18,536 - INFO - Fetching all departments
+2024-06-06 12:16:19,387 - INFO - Fetching claim requests for employee with id: 61
+2024-06-06 12:16:19,874 - INFO - Fetching all departments
+2024-06-06 12:16:20,869 - INFO - Fetching all departments
+2024-06-06 12:16:22,137 - INFO - Fetching all departments
+2024-06-06 12:16:29,076 - INFO - Fetching all departments
+2024-06-06 12:16:30,757 - INFO - Fetching all departments
+2024-06-06 12:16:32,899 - INFO - Fetching all departments
+2024-06-06 12:16:34,140 - INFO - Fetching all departments
+2024-06-06 12:16:35,316 - INFO - Fetching all departments
+2024-06-06 12:16:36,090 - INFO - Fetching all departments
+2024-06-06 12:16:36,469 - INFO - Fetching all departments
+2024-06-06 12:16:37,720 - INFO - Fetching all departments
+2024-06-06 12:16:39,052 - INFO - Fetching all departments
+2024-06-06 12:16:41,657 - INFO - Fetching all employees
+2024-06-06 12:16:41,704 - INFO - Fetching all managers
+2024-06-06 12:16:42,500 - INFO - Fetching all departments
+2024-06-06 12:16:44,642 - INFO - Fetching all employees
+2024-06-06 12:16:44,654 - INFO - Fetching all managers
+2024-06-06 12:16:47,411 - INFO - Fetching all employees
+2024-06-06 12:16:47,421 - INFO - Fetching all managers
+2024-06-06 12:16:49,591 - INFO - Fetching all employees
+2024-06-06 12:16:49,603 - INFO - Fetching all managers
+2024-06-06 12:16:54,455 - INFO - Fetching all employees
+2024-06-06 12:16:54,471 - INFO - Fetching all managers
+2024-06-06 12:16:54,895 - INFO - Fetching all departments
+2024-06-06 12:16:54,905 - INFO - Fetching all departments

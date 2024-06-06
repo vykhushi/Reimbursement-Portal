@@ -385,6 +385,7 @@ def read_dept(db: Session = Depends(get_db)):
 @app.delete("/departments/{department_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_department(department_id: int, db: Session = Depends(get_db)):
     logging.info(f"Deleting department with id: {department_id}")
+
     department = db.query(Dept).filter(Dept.id == department_id).first()
     
     if department is None:
