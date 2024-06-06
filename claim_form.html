@@ -34,14 +34,10 @@
         </div>
     </nav>
     <div class="container">
-        <!-- <div class="left-menu-container" id="leftMenuContainer">
-            <div id="leftMenuContainer"> </div>
-        </div> -->
+        
         <div class="left-menu">
             <ul>
                 <li><i class="fas fa-home"><a href="manager_dashboard.html">Home</a></i></li>
-                <!-- <li><i class="fas fa-indian-rupee-sign"><a href="claim_form.html">Reimbursement</a></i></li>
-                <li><i class="fas fa-list"><a href="expense-list.html">Records</a></i></li> -->
                 <li><i class="fas fa-book"><a href="policy.html">Policy</a></i></li>
             </ul>
         </div>
@@ -92,16 +88,7 @@
     </footer>
     </div>
 
-    <script>
-        // document.addEventListener('DOMContentLoaded', async function () {
-        //     //Fetch the left menu HTML
-        //     const response = await fetch('left_menu.html');
-        //     const leftMenuHTML = await response.text();
-
-        //     // Inject the left menu into the container
-        //     const leftMenuContainer = document.getElementById('leftMenuContainer');
-        //     leftMenuContainer.innerHTML = leftMenuHTML;
-        // });   
+    <script>  
 
         const expenseForm = document.getElementById('expenseForm');
         expenseForm.addEventListener('submit', async function (event) {
@@ -131,8 +118,7 @@
                 }
             }
 
-            // If validation passes, proceed with form submission
-            // document.getElementById('employee_id').innerHTML=JSON.parse(sessionStorage.getItem('user')).id
+            
             const formElement = document.getElementById('expenseForm');
 
             console.log(formElement)
@@ -175,8 +161,6 @@
         const userDetail = document.getElementById("userDetail");
         userDetail.innerHTML = username;
         console.log(email, userDetail);
-
-
 
     </script>
 
