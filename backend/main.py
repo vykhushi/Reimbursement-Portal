@@ -28,8 +28,7 @@ origins = [
     "http://localhost",         # Allow requests from this origin
     "http://localhost:8080",
     "http://127.0.0.1:5500"
-        # Additional allowed origin (if applicable)
-    # Add other origins as needed
+       
 ]
 
 # Add CORS middleware to allow requests from specified origins
@@ -52,8 +51,8 @@ def get_db():
 
 
 logging.basicConfig(
-       filename='app.log',  # Log file name
-       level=(logging.DEBUG),  # Log level (e.g., DEBUG, INFO, ERROR)
+       filename='app.log', 
+       level=(logging.DEBUG),  
        format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
 )
 
@@ -65,7 +64,7 @@ def create_user(user: CreateUser, db: Session = Depends(get_db)):
         admin_user = db.query(DBUser).filter(DBUser.role == 'admin').first()
         if not admin_user:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Admin user not found")
-        print("abc")
+        # print("abc")
         db_user = DBUser(
               
               username=user.username,
@@ -210,8 +209,6 @@ def read_manager_users(db: Session = Depends(get_db)):
     return managers
 
 
-
-
 #API endpoint to submit the claim form
 @app.post("/forms/", response_model=GetFormData)
 async def submit_form(
@@ -354,13 +351,6 @@ def read_users(email:str,db: Session = Depends(get_db)):
     user = db.query(DBUser).filter(DBUser.email==email).first()
     return user
 
-
-# #API endpoint to get subordinates
-# @app.get("/get_subordinates/{id}", response_model=None)
-# def read_users(id:int,db: Session = Depends(get_db)):
-#     subordinates = db.query(DBUser).filter(DBUser.manager_id==id).all()
-#     return subordinates
-   
 
 #API endpoint to create department(add dept)
 @app.post("/departments/", response_model=AddDepartment)
